@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer with Accordion</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Base (mobile) styles */
+        a {
+            text-decoration: none;
+            color: #191919;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 1.2;
+            font-family: 'Inter';
+        }
+
+        .footer-main {
+            background-color: #F2F2F2;
+            border-top: 7px solid #AE8FFD;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .footer-heading {
+            font-family: 'Inter';
+            color: #191919;
+            text-align: left;
+            font-weight: 700;
+            letter-spacing: 0px;
+            padding-bottom: 0.625vw;
+            text-transform: capitalize;
+            cursor: pointer;
+            margin: 0;
+            position: relative;
+            padding: 10px 0;
+            display: block;
+            width: 100%;
+            border-bottom: 1px solid rgb(200, 200, 200);
+        }
+
+        .footer-heading::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(0deg);
+            width: 18px;
+            height: 18px;
+            background: url("icons/caret-down.svg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            transition: transform 0.3s ease;
+        }
+
+        .footer-heading[aria-expanded="true"]::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: flex-start;
+            gap: 15px;
+        }
+
+        .social-icons img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .track-order-input {
+            width: 100%;
+            padding: 8px;
+            border: 2px solid #BABABA;
+            border-radius: 4px;
+            background-color: #F2F2F2;
+        }
+
+        .track-btn, .subscribe-btn {
+            background-color: #4A25AA;
+            color: white;
+            border: none;
+            padding: 8px 25px;
+            border-radius: 10px;
+        }
+
+        .container .row {
+            padding: 40px;
+        }
+
+        .footer-column {
+            flex: 0 0 100%;
+            max-width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .mailing-list {
+            width: 80%;
+            margin-bottom: 0 !important;
+        }
+
+        .track-order {
+            display: none;
+        }
+
+        .collapse {
+            background-color: #FFFFFF !important;
+        }
+
+        .mailing-sec .footer-heading {
+            border-bottom: none;
+        }
+
+        .mailing-sec .footer-heading::after {
+            display: none;
+        }
+        
+        .products-sec,
+            .manufacturers-sec,
+            .services-sec,
+            .resource-sec {
+                margin-bottom: 0 !important;
+            }
+        /* Desktop styles */
+        @media (min-width: 990px) {
+            .container .row {
+                padding: 0;
+            }
+
+            .footer-column {
+                flex: initial;
+                max-width: initial;
+                margin-bottom: 0;
+            }
+
+            .footer-heading {
+                pointer-events: none;
+                cursor: default;
+                border-bottom: none;
+                padding-bottom: 0.625vw;
+            }
+
+            .footer-heading::after {
+                display: none !important;
+            }
+            
+            .footer-heading {
+                padding-top: 0 !important;
+            }
+
+           .collapse {
+           background-color: transparent !important;
+
+            }
+
+            .collapse:not(.show) {
+                display: block !important;
+            }
+
+            .mailing-list {
+                width: 100%;
+                margin-bottom: 130px !important;
+            }
+
+            .track-order-input {
+                width: 200px;
+            }
+
+            .social-icons {
+                justify-content: center;
+            }
+
+            .resource-sec {
+                margin-bottom: 69px !important;
+            }
+
+            .track-order {
+                display: block;
+            }
+        }
+
+        .footer-links li a {
+            word-break: break-word;
+            overflow-wrap: break-word;
+        }
+
+        .copyright {
+            white-space: nowrap;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <footer class="footer-main py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Products Column -->
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12 footer-column mb-3 products-sec">
+                    <h6 class="footer-heading" data-bs-toggle="collapse" href="#productsCollapse" role="button" aria-expanded="false" aria-controls="productsCollapse">
+                        Products
+                    </h6>
+                    <div class="collapse" id="productsCollapse">
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">Commercial Locks</a></li>
+                            <li><a href="#">Residential Lock/Hardware</a></li>
+                            <li><a href="#">Electronics Access Control Products</a></li>
+                            <li><a href="#">Exit Devices and Trims</a></li>
+                            <li><a href="#">Bath Hardware</a></li>
+                            <li><a href="#">Door Controls</a></li>
+                            <li><a href="#">Cylinders and Key Blanks</a></li>
+                            <li><a href="#">Padlocks - Auxiliary Locks</a></li>
+                            <li><a href="#">Hinges and Pivots</a></li>
+                            <li><a href="#">Door Trim and Accessories</a></li>
+                            <li><a href="#">Sliding-Folding Patio-Door Hardware</a></li>
+                            <li><a href="#">Gate Hardware</a></li>
+                            <li><a href="#">Key Cabinets</a></li>
+                            <li><a href="#">Lites and Louvers</a></li>
+                            <li><a href="#">Access Panels</a></li>
+                            <li><a href="#">Fire Extinguisher Cabinets</a></li>
+                            <li><a href="#">Cabinet Drawer Locks & Hardware</a></li>
+                            <li><a href="#">Washroom/Bath Accessories</a></li>
+                            <li><a href="#">Safes</a></li>
+                            <li><a href="#">Trailer RV Hardware</a></li>
+                            <li><a href="#">Locksmith Tools</a></li>
+                            <li><a href="#">Parts and Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Manufacturers Column -->
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12 footer-column mb-3 manufacturers-sec">
+                    <h6 class="footer-heading" data-bs-toggle="collapse" href="#manufacturersCollapse" role="button" aria-expanded="false" aria-controls="manufacturersCollapse">
+                        Manufacturers
+                    </h6>
+                    <div class="collapse" id="manufacturersCollapse">
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">A-1 Security Manufacturing</a></li>
+                            <li><a href="#">AAble</a></li>
+                            <li><a href="#">ABH Manufacturing</a></li>
+                            <li><a href="#">Abloy</a></li>
+                            <li><a href="#">Abrites</a></li>
+                            <li><a href="#">Absolute Security</a></li>
+                            <li><a href="#">ABUS</a></li>
+                            <li><a href="#">Access Tools</a></li>
+                            <li><a href="#">AccuReader</a></li>
+                            <li><a href="#">ACDP</a></li>
+                            <li><a href="#">ACSI</a></li>
+                            <li><a href="#">Adams Rite</a></li>
+                            <li><a href="#">Advanced Diagnostics</a></li>
+                            <li><a href="#">AE Tools</a></li>
+                            <li><a href="#">Aero Lock</a></li>
+                            <li><a href="#">Air Louvers</a></li>
+                            <li><a href="#">Alarm Controls</a></li>
+                            <li><a href="#">Alarm Lock</a></li>
+                            <li><a href="#">Altronix</a></li>
+                            <li><a href="#">American Lock</a></li>
+                            <li><a href="#">Amerock</a></li>
+                            <li><a href="#">View All></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Services Column -->
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12 footer-column mb-3 services-sec">
+                    <h6 class="footer-heading" data-bs-toggle="collapse" href="#servicesCollapse" role="button" aria-expanded="false" aria-controls="servicesCollapse">
+                        Services
+                    </h6>
+                    <div class="collapse" id="servicesCollapse">
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">Glass services</a></li>
+                            <li><a href="#">Access Control consultation</a></li>
+                            <li><a href="#">Create a Project</a></li>
+                        </ul>
+                    </div>
+                    
+                    <h6 class="footer-heading" data-bs-toggle="collapse" href="#dashboardCollapse" role="button" aria-expanded="false" aria-controls="dashboardCollapse">
+                        Dashboard
+                    </h6>
+                    <div class="collapse" id="dashboardCollapse">
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">My Dashboard</a></li>
+                            <li><a href="#">My Invoices</a></li>
+                            <li><a href="#">My Orders</a></li>
+                            <li><a href="#">My Projects</a></li>
+                            <li><a href="#">User Management</a></li>
+                        </ul>
+                    </div>
+
+                    <h6 class="footer-heading" data-bs-toggle="collapse" href="#aboutCollapse" role="button" aria-expanded="false" aria-controls="aboutCollapse">
+                        About Us
+                    </h6>
+                    <div class="collapse" id="aboutCollapse">
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">About Banner Solutions</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Become a Customer</a></li>
+                            <li><a href="#">Our locations</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Resources Column -->
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12 footer-column mb-3 resource-sec">
+                    <h6 class="footer-heading" data-bs-toggle="collapse" href="#resourcesCollapse" role="button" aria-expanded="false" aria-controls="resourcesCollapse">
+                        Resources
+                    </h6>
+                    <div class="collapse" id="resourcesCollapse">
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="#">Policies</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Whitepapers</a></li>
+                            <li><a href="#">Customer Application Form</a></li>
+                            <li><a href="#">Manufacturer Literature</a></li>
+                            <li><a href="#">Category Guides</a></li>
+                            <li><a href="#">Education</a></li>
+                            <li><a href="#">Website Tutorials</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+
+                    <h6 class="footer-heading" data-bs-toggle="collapse" href="#contactCollapse" role="button" aria-expanded="false" aria-controls="contactCollapse">
+                        Contact Us
+                    </h6>
+                    <div class="collapse" id="contactCollapse">
+                        <ul class="list-unstyled footer-links">
+                            <li><a href="tel:888-362-0750">888-362-0750</a></li>
+                            <li><a href="mailto:info@bannersolutions.com">info@bannersolutions.com</a></li>
+                            <li><a href="#">Find a Location</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mailing List and Track Order -->
+                <div class="col-lg-2 col-md-4 col-sm-6 col-12 footer-column mb-3 mailing-sec">
+                    <div class="mb-5 mailing-list">
+                        <h6 class="footer-heading">Be A Part Of Our Mailing List</h6>
+                        <p class="small">Get time to time updates on banner news, industry updates and new product updates</p>
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+
+                    <div class="track-order">
+                        <h6 class="footer-heading">Track Your Order</h6>
+                        <p class="small">Order ID / Customer ID / Tracking No.</p>
+                        <div class="d-flex gap-2">
+                            <input type="text" class="track-order-input" placeholder="Enter Details">
+                            <button class="track-btn">Track</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Icons Column -->
+
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 footer-column mb-3">
+                <div class="d-flex flex-column h-100">
+                    <div class="social-icons">
+                        <a href="#"><img src="icons/instagram.svg" alt="Facebook" width="30" height="30"></a>
+                        <a href="#"><img src="icons/twitter.svg" alt="Twitter" width="30" height="30"></a>
+                        <a href="#"><img src="icons/facebook.svg" alt="Instagram" width="30" height="30"></a>
+                    </div>
+                    <p class="mt-auto mb-0 copyright"> &copy; Banner Solutions 2025</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
