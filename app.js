@@ -1,0 +1,16 @@
+window.addEventListener("scroll", ()=> {
+    const header = document.querySelector("header");
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");    
+        header.querySelector(".logo img").src="https://www.bannersolutions.com/icons/Banner_Logo.svg"; 
+        header.querySelector(".phone").src="./images/phone-bl.svg";
+        header.querySelector(".search").src="./images/search-bl.svg";
+        header.querySelector(".cart").src="./images/cart-bl.svg";
+    } else {
+        header.classList.remove("scrolled");     
+        document.querySelector(".logo img").src="https://www.bannersolutions.com/static/img/homepage/BSlogo.png"; 
+        header.querySelector(".phone").src="./images/phone-wh.svg";
+        header.querySelector(".search").src="./images/search-wh.svg";
+        header.querySelector(".cart").src="./images/cart-wh.svg";
+    }
+});
