@@ -1,0 +1,13 @@
+/* variable for color and font family global */
+:root {
+    --header-font-color-white: #ffffff;
+    --header-font-color-black: #000000;
+    --header-border-white-color:#ffffff;
+    --header-border-black-color:#000000;
+    --font-family-sans-serif: sans-serif;
+    --font-family-roboto: "Roboto", serif;
+    --font-family-inter: "Inter", serif;
+    --color-white:#ffffff;
+    --color-black:#000000;
+    --color-list-hover:rgb(255, 184, 70);
+}

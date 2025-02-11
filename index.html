@@ -3,12 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Footer with Accordion</title>
+    <title>A Responsive Layout</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/variable.css">
+    <link rel="stylesheet" href="/header.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="/app.js"></script>
 </head>
 <body>
+    <!--header start -->
+    <header>
+        <div class="container">   
+             <!--contact bar-->    
+            <div class="contact-bar">
+                <p>Serving Professionals Only! <a href="#">Click here</a> to become a customer.</p>
+                    <p>  
+                        <a href="/contact/">Email our team</a>    
+                        <a href="tel:888-362-0750">Call Us 888 362 0750</a>
+                    </p>
+            </div>
+           <!-- mobile header -->
+            <div class="header">
+                <div class="mobile-menu">
+                    <img src="https://www.bannersolutions.com/static/icons/homepage/menu_black_24dp.svg" alt="menu-bar" width="24" height="24" />
+                </div>
+                <a href="/" class="logo">
+                    <img src="https://www.bannersolutions.com/static/img/homepage/BSlogo.png" alt="site-logo" width="110" height="47"/>
+                </a>
+                <div class="menu-items">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Shop By</a></li>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Track your order</a></li>
+                    </ul>
+                </div>
+                <!--icons and links-->
+                <div class="quick-links">
+                    <div class="mobile-icons">
+                        <a href="/">
+                            <img src="./images/phone-wh.svg" alt="call us" width="24" height="24" class="phone"/>
+                        </a>
+                        <a href="/">
+                            <img src="./images/search-wh.svg" alt="search icon" width="24" height="24" class="search"/>
+                        </a>
+                        <a href="/">
+                            <img src="./images/cart-wh.svg" alt="cart icon" width="24" height="24" class="cart"/>
+                        </a>
+                    </div>
+                    <div class="user-controls">
+                        <a href="/">Login</a>
+                        <a href="/">Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--header end -->
+
+    <main>
+        <h1>Default code this has 200vh size for watching scroll effect and all</h1>
+    </main>
+
+    <!--Footer start -->
+
     <footer class="footer-main py-5">
         <div class="container">
             <div class="row">
@@ -183,7 +246,7 @@
             </div>
         </div>
     </footer>
-
+    <!--Footer end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
