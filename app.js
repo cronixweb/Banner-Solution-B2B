@@ -1,5 +1,12 @@
 window.addEventListener("scroll", ()=> {
     const header = document.querySelector("header");
+    let scrollTop = window.scrollY || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        header.style.top = "-110px";
+    } else if (scrollTop < lastScrollTop) {
+        header.style.top = "0";
+    }
+    lastScrollTop = scrollTop;
     if (window.scrollY > 50) {
         header.classList.add("scrolled");    
         header.querySelector(".logo img").src="https://www.bannersolutions.com/icons/Banner_Logo.svg"; 
@@ -24,3 +31,4 @@ document.addEventListener("DOMContentLoaded", (e) => {
         document.querySelector("header .menu-items-wrapper").style.left = "-599px";
     });
 });
+let lastScrollTop = 0;
