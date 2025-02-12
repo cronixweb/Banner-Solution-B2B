@@ -17,34 +17,92 @@
     <header>
         <div class="container">   
              <!--contact bar-->    
-            <div class="contact-bar">
-                <p>Serving Professionals Only! <a href="#">Click here</a> to become a customer.</p>
-                    <p>  
+            <div class="contact-bar row justify-content-between">
+                <p class="col-auto">Serving Professionals Only! <a href="#">Click here</a> to become a customer.</p>
+                    <p class="col-auto d-flex">  
                         <a href="/contact/">Email our team</a>    
                         <a href="tel:888-362-0750">Call Us 888 362 0750</a>
                     </p>
             </div>
            <!-- mobile header -->
-            <div class="header">
-                <div class="mobile-menu">
+            <div class="header row justify-content-between">
+                <div class="mobile-menu col-auto">
                     <img src="https://www.bannersolutions.com/static/icons/homepage/menu_black_24dp.svg" alt="menu-bar" width="24" height="24" />
                 </div>
-                <a href="/" class="logo">
+                <a href="/" class="logo col-auto">
                     <img src="https://www.bannersolutions.com/static/img/homepage/BSlogo.png" alt="site-logo" width="110" height="47"/>
                 </a>
-                <div class="menu-items">
-                    <ul>
-                        <li><a href="#" class="active">Home</a></li>
-                        <li><a href="#">Shop By</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Resources</a></li>
-                        <li><a href="#">About Us</a></li>
+                <div class="menu-items-wrapper col-auto">
+                    <ul class="menu-items">
+                        <li>
+                            <a href="#" class="active">Home</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <details>
+                                <summary><p>Shop By</p></summary>
+                                <ul>
+                                    <li><a href="#">Manufacturers</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                </ul>
+                            </details>
+                        </li>
+                        <hr>
+                        <li>
+                            <details>
+                            <summary><p>Dashboard</p></summary>
+                            <ul>
+                                <li><a href="#">My Dashboard</a></li>
+                                <li><a href="#">My Invoixes</a></li>
+                                <li><a href="#">My Orders</a></li>
+                                <li><a href="#">My Projects</a></li>
+                                <li><a href="#">User Managment</a></li>
+                            </ul>
+                            </details>
+                        </li>
+                        <hr>
+                        <li>
+                            <details>
+                                <summary><p>Resources</p></summary>
+                                <ul>
+                                    <li><a href="#">Policies</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">Whitepapers</a></li>
+                                    <li><a href="#">Customer Applications</a></li>
+                                    <li><a href="#">Manufacturer Literature</a></li>
+                                </ul>    
+                            </details>
+                        </li>
+                        <hr>
+                        <li>
+                            <details>
+                                <summary><p>Services</p></summary>
+                                <ul>
+                                    <li><a href="#">Manufacturers</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                </ul>    
+                            </details>
+                        </li>
+                        <hr>
+                        <li>
+                            <details>
+                                <summary><p>About Us</p></summary>
+                                <ul>
+                                    <li><a href="#">Manufacturers</a></li>
+                                    <li><a href="#">Categories</a></li>
+                                </ul>    
+                            </details>
+                        </li>
+                        <hr>
+                        <li class="login-mobile"><a href="#">Login/Register</a></li>
+                        <hr>
+                        <li class="call-us"><img src="./images/phone-bl.svg" alt="call us" width="20" height="20"><a href="tel:888-362-0750">888 362 0750</a></li>
+                        <hr>
                         <li><a href="#">Track your order</a></li>
                     </ul>
                 </div>
                 <!--icons and links-->
-                <div class="quick-links">
+                <div class="quick-links col-auto d-flex">
                     <div class="mobile-icons">
                         <a href="/">
                             <img src="./images/phone-wh.svg" alt="call us" width="24" height="24" class="phone"/>

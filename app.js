@@ -16,3 +16,11 @@ window.addEventListener("scroll", ()=> {
         header.querySelector(".mobile-menu img").src="https://www.bannersolutions.com/static/icons/homepage/menu_black_24dp.svg";
     }
 });
+document.addEventListener("DOMContentLoaded", (e) => {
+    document.querySelector(".mobile-menu").addEventListener("click", () => {
+        document.querySelector("header .menu-items-wrapper").style.left = "0";
+    });
+    document.querySelector("main").addEventListener("click", () => {
+        document.querySelector("header .menu-items-wrapper").style.left = "-599px";
+    });
+});

@@ -1,4 +1,4 @@
-*{
+header *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,6 +8,9 @@ main{
     background-color: var(--color-black);
     height: 200vh;
     align-content: center;
+}
+header .col-auto{
+    padding: 0;
 }
 header{
     background-color: transparent;
@@ -23,78 +26,109 @@ header a{
 header .container{
     width: 90%;
     margin: 0 auto;
+    padding: 0;
 }
-.contact-bar{
+header .contact-bar{
     display: none;
-    justify-content: space-between;
+    align-items: center;
     font-family: var(--font-family-roboto);
 }
-.contact-bar p:nth-child(2){
-    display: flex;
+header .contact-bar a{
+    text-decoration: underline;
+}
+header .contact-bar p:nth-child(2){
     gap: 10px;
 }
 .header{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
 }
-.header a{
-    text-decoration: none;
+/* mobile menu settings */
+
+header .menu-items-wrapper{
+    position: absolute;
+    left: -599px;
+    top: 0;
+    width: 80%;
+    max-width: 500px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-white);
+    padding: 50px 16px 0 16px;
+    transition: left 1s ease-in-out;
 }
-.menu-items{
+header .menu-items ul{
+    margin-top: 10px;
+}
+header .menu-items hr{
+    background-color: #999999;
+    width: 50%;
+    height: 1px;
+    margin: 20px 0;
+    border: none;
+}
+header .menu-items>li a{
+    font-size: var(--font-size-16);
+}
+header .menu-items>li.call-us img{
+    margin-right: 5px;
+}
+header .menu-items ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+header .menu-items li:last-child{
     display: none;
 }
-.menu-items ul li:last-child a{
+header .menu-items li summary{
+    display: flex;
+}
+header .menu-items li summary::after{
+    content: '';
+    background-image: url("https://www.bannersolutions.com/icons/DashboardDropdown.svg");
+    width: 24px;
+    margin-left: 10px;
+}
+header .menu-items, ul{
+    list-style-type: none;
+}
+header .menu-items-wrapper ul li a, .menu-items-wrapper ul li p{
+    color: var(--color-black);
+}
+header .menu-items>li:last-child a{
     border: 1px solid var(--header-border-white-color);
     padding: 0 8px;
 }
-.menu-items ul li a.active, .menu-items ul li a:hover {
-    color: var(--color-list-hover);
-    border-bottom: 4px dotted var(--color-list-hover);
-    padding-bottom: 2px;
-}
-.menu-items ul li:last-child a:hover{
+header .menu-items-wrapper ul li:last-child a:hover{
     background-color: var(--color-white);
     color: var(--header-font-color-black);
     border: 1px solid var(--header-border-white-color);
     padding-bottom: 0;
 }
-.menu-items ul{
+header .menu-items li p{
     text-transform: uppercase;
-    list-style-type: none;
-    display: flex;
     gap: 15px;
 }
-.quick-links{
-    display: none;
-    gap: 10px;
-    justify-content: end;
-}
-.mobile-icons{
-    display: none;
+header .quick-links{
     gap: 10px;
 }
-.user-controls{
+header .mobile-icons{
+    gap: 10px;
+}
+header .user-controls{
     display: none;
     align-items: center;
     font-family: var(--font-family-inter);
 }
-.user-controls a:first-child{
+header .user-controls a:first-child{
     border-right: 1px solid var(--header-border-white-color);
     padding-right: 5px;
     margin-right: 5px;
 }
-@media (min-width: 375px) {
-    .mobile-icons{
-        display: flex;
-    }
-    .quick-links{
-        display: flex;
-    }
-}
 @media (min-width: 960px) {
-    .contact-bar{
+    header .contact-bar{
         display: flex;
     }
     .header{
@@ -103,13 +137,44 @@ header .container{
     
 }
 @media (min-width: 1200px) {
-    .menu-items{
+    /* menu desktop styles */
+    header .menu-items-wrapper{
         display: block;
+        position: inherit;
+        width: auto;
+        max-width: unset;
+        height: unset;
+        background-color: unset;
+        padding: 0;
+    }
+    header .menu-items-wrapper .menu-items{
+        display: flex;
+        gap: 15px;
+    }
+    header .menu-items-wrapper .menu-items .login-mobile, header .menu-items-wrapper .menu-items .call-us{
+        display: none;
+    }
+    header .menu-items li:last-child{
+        display: block;
+    }
+    header .menu-items-wrapper .menu-items hr{
+        display: none;
+    }
+    header .menu-items-wrapper .menu-items li a, header .menu-items-wrapper .menu-items li p {
+        color: var(--header-font-color-white);
+    }
+    header .menu-items li summary::after{
+        content: none;
+    }
+    header .menu-items-wrapper ul li a.active, .menu-items-wrapper ul li a:hover {
+        color: var(--color-list-hover);
+        border-bottom: 4px dotted var(--color-list-hover);
+        padding-bottom: 2px;
     }
     .mobile-menu{
         display: none;
     }
-    .user-controls{
+    header .user-controls{
         display: flex;
     }
     .mobile-icons a:first-child{
@@ -129,14 +194,17 @@ header.scrolled .container {
     color: var(--header-font-color-black);
 }
 header.scrolled .container a{
-    color: var(--header-font-color-black);
+    color: var(--header-font-color-black) !important;
 }
-header.scrolled .container .menu-items ul li:last-child a{
+header.scrolled .container p{
+    color: var(--header-font-color-black) !important;
+}
+header.scrolled .container .menu-items>li:last-child a{
     border-color: var(--header-border-black-color);
 }
-header.scrolled .container .menu-items ul li:last-child a:hover{
+header.scrolled .container .menu-items>li:last-child a:hover{
     background-color: var(--color-black);
-    color: var(--header-font-color-white);
+    color: var(--header-font-color-white) !important;
 }
 header.scrolled .container .user-controls a:first-child{
     border-color: var(--header-border-black-color);
