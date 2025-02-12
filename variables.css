@@ -1,0 +1,12 @@
+:root {
+      /* Font Families */
+    --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
+    /* Existing color variables */
+    --color-text-primary: #191919;
+    --color-background-light: #F2F2F2;
+    --color-accent-purple: #AE8FFD;
+    --color-border-light: #C8C8C8;
+    --color-border-gray: #BABABA;
+    --color-button-primary: #4A25AA;
+    --color-text-white: #FFFFFF;
+}

@@ -1,16 +1,18 @@
+@import url('variables.css');
+ 
  /* Base (mobile) styles */
  a {
     text-decoration: none;
-    color: #191919;
+    color: var(--color-text-primary);
     font-weight: normal;
     font-size: 14px;
     line-height: 1.2;
-    font-family: 'Inter';
+    font-family: var(--font-primary)
 }
 
 .footer-main {
-    background-color: #F2F2F2;
-    border-top: 7px solid #AE8FFD;
+    background-color: var(--color-background-light);
+    border-top: 7px solid var(--color-accent-purple);
 }
 
 .footer-links li {
@@ -19,9 +21,8 @@
 }
 
 .footer-heading {
-    font-family: 'Inter';
-    color: #191919;
-    text-align: left;
+    font-family: var(--font-primary);
+    color: var(--color-text-primary);
     font-weight: 700;
     letter-spacing: 0px;
     padding-bottom: 0.625vw;
@@ -32,7 +33,7 @@
     padding: 10px 0;
     display: block;
     width: 100%;
-    border-bottom: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid var(--color-border-light);
 }
 
 .footer-heading::after {
@@ -68,14 +69,14 @@
 .track-order-input {
     width: 100%;
     padding: 8px;
-    border: 2px solid #BABABA;
+    border: 2px solid var(--color-border-gray);
     border-radius: 4px;
-    background-color: #F2F2F2;
+    background-color: var(--color-background-light);
 }
 
 .track-btn, .subscribe-btn {
-    background-color: #4A25AA;
-    color: white;
+    background-color: var(--color-button-primary);
+    color: var(--color-text-white);
     border: none;
     padding: 8px 25px;
     border-radius: 10px;
@@ -101,7 +102,8 @@
 }
 
 .collapse {
-    background-color: #FFFFFF !important;
+    background-color: var(--color-text-white) !important;
+    
 }
 
 .mailing-sec .footer-heading {
@@ -182,5 +184,5 @@
 }
 
 .copyright {
-    white-space: nowrap;
+    white-space: wrap;
 }
