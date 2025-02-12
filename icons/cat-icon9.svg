@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="Group_55729" data-name="Group 55729" transform="translate(-791 -1784)">
+    <rect id="Rectangle_33768" data-name="Rectangle 33768" width="80" height="80" transform="translate(791 1784)" fill="none"/>
+    <rect id="Rectangle_33769" data-name="Rectangle 33769" width="30" height="52" transform="translate(801 1798)" fill="#ffd99d"/>
+    <path id="Rectangle_33769_-_Outline" data-name="Rectangle 33769 - Outline" d="M4,4V48H56V4H4M0,0H60V52H0Z" transform="translate(801 1798)" fill="#4a25aa"/>
+    <circle id="Ellipse_678" data-name="Ellipse 678" cx="3" cy="3" r="3" transform="translate(813 1810)" fill="#4a25aa"/>
+    <circle id="Ellipse_679" data-name="Ellipse 679" cx="3" cy="3" r="3" transform="translate(813 1821)" fill="#4a25aa"/>
+    <g id="Group_7324" data-name="Group 7324" transform="translate(0 -1686)">
+      <path id="Path_18004" data-name="Path 18004" d="M16604.719,1029h-3.766a2,2,0,0,1-2-2v-12a2,2,0,0,1,2-2h1.766v-8h-1.766a2,2,0,0,1,0-4h3.766a2,2,0,0,1,2,2v12a2,2,0,0,1-2,2h-1.766v8h1.766a2,2,0,0,1,0,4Z" transform="translate(-15771.836 2483)" fill="#4a25aa"/>
+      <path id="Path_18005" data-name="Path 18005" d="M16604.719,1029.051h-3.766a2,2,0,0,1-2-2v-12.025a2,2,0,0,1,2-2h1.766V1005h-1.766a2,2,0,0,1,0-4h3.766a2,2,0,0,1,2,2v12.025a2,2,0,0,1-2,2h-1.766v8.025h1.766a2,2,0,0,1,0,4Z" transform="translate(-15771.836 2506.949)" fill="#4a25aa"/>
+      <circle id="Ellipse_681" data-name="Ellipse 681" cx="3" cy="3" r="3" transform="translate(844 3496)" fill="#4a25aa"/>
+      <circle id="Ellipse_682" data-name="Ellipse 682" cx="3" cy="3" r="3" transform="translate(844 3507)" fill="#4a25aa"/>
+      <circle id="Ellipse_683" data-name="Ellipse 683" cx="3" cy="3" r="3" transform="translate(844 3518)" fill="#4a25aa"/>
+    </g>
+    <circle id="Ellipse_680" data-name="Ellipse 680" cx="3" cy="3" r="3" transform="translate(813 1832)" fill="#4a25aa"/>
+    <rect id="Rectangle_35201" data-name="Rectangle 35201" width="80" height="80" transform="translate(791 1784)" fill="none"/>
+  </g>
+</svg>
