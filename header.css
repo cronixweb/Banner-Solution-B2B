@@ -20,6 +20,7 @@ header{
     width: 100%;
     padding-top: 10px;
     transition: top 0.5s ease;
+    z-index: 999;
 }
 header a{
     color : var( --header-font-color-white);
@@ -37,6 +38,7 @@ header .contact-bar{
 }
 header .contact-bar a{
     text-decoration: underline;
+    font-family: var(--font-family-roboto);
 }
 header .contact-bar p:nth-child(2){
     gap: 10px;
@@ -48,7 +50,7 @@ header .contact-bar p:nth-child(2){
 /* mobile menu settings */
 
 header .menu-items-wrapper{
-    position: absolute;
+    position: fixed;
     left: -599px;
     top: 0;
     width: 80%;
