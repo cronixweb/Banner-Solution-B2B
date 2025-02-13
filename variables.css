@@ -1,5 +1,13 @@
 /* Add only font sizes or weight */
 :root {
+  /* font sizes */
+    --font-size-16: 16px;
+    --font-size-h3: 20px;
+    /* font-weight */
+    --font-weight-notes:500;
+
+
+    
   /* Font Families */
   --font-primary: 'Inter', system-ui, -apple-system, sans-serif;
 

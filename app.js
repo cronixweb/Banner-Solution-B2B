@@ -2,6 +2,7 @@
 let lastScrollTop = 0;
 window.addEventListener("scroll", ()=> {
     const header = document.querySelector("header");
+    
     let scrollTop = window.scrollY || document.documentElement.scrollTop;
     if (scrollTop > lastScrollTop) {
         header.style.top = "-110px";
@@ -10,6 +11,7 @@ window.addEventListener("scroll", ()=> {
     }
     lastScrollTop = scrollTop;
     if (window.scrollY > 50) {
+        header.style.position="fixed";
         header.classList.add("scrolled");    
         header.querySelector(".logo img").src="https://www.bannersolutions.com/icons/Banner_Logo.svg"; 
         header.querySelector(".phone").src="./images/phone-bl.svg";
@@ -17,6 +19,7 @@ window.addEventListener("scroll", ()=> {
         header.querySelector(".cart").src="./images/cart-bl.svg";
         header.querySelector(".mobile-menu img").src="./images/balck-hamburger-menu.png";
     } else {
+        header.style.position="relative";
         header.classList.remove("scrolled");     
         document.querySelector(".logo img").src="https://www.bannersolutions.com/static/img/homepage/BSlogo.png"; 
         header.querySelector(".phone").src="./images/phone-wh.svg";

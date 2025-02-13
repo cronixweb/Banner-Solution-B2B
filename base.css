@@ -10,6 +10,6 @@
     --font-family-inter: "Inter", serif;
     --color-white:#ffffff;
     --color-black:#000000;
-    --color-list-hover:rgb(255, 184, 70);
-    --font-size-16: 16px;
+    --hover-color:rgb(255, 184, 70);
+    --contact-icon-bg-color: #F1EBFF;
 }
