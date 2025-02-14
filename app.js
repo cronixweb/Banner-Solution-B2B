@@ -18,6 +18,9 @@ window.addEventListener("scroll", ()=> {
         header.querySelector(".search").src="./images/search-bl.svg";
         header.querySelector(".cart").src="./images/cart-bl.svg";
         header.querySelector(".mobile-menu img").src="./images/balck-hamburger-menu.png";
+        document.querySelectorAll(".menu-items li details").forEach(detail => {
+            detail.removeAttribute("open");
+        });        
     } else {
         header.style.position="relative";
         header.classList.remove("scrolled");     
@@ -43,5 +46,22 @@ document.addEventListener("DOMContentLoaded", () => {
             menuWrapper.style.left = "-599px";
         }
     });
-});
 
+    // making other details close on desktop when other is clicked
+    
+    const detailsElements = document.querySelectorAll("nav .menu-items details");
+    if (window.innerWidth > 1200) {
+    detailsElements.forEach((details) => {
+        details.addEventListener("toggle", function () {
+            if (this.open) {
+                detailsElements.forEach((otherDetails) => {
+                    if (otherDetails !== this) {
+                        otherDetails.open = false;
+                    }
+                });
+            }
+        });
+    });
+}
+
+});

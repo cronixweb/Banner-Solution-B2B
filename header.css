@@ -3,6 +3,9 @@ header *{
     padding: 0;
     box-sizing: border-box;
 }
+header .container{
+    position: relative;
+}
 header .col-auto{
     padding: 0;
 }
@@ -41,6 +44,7 @@ header .contact-bar p:nth-child(2){
 .header{
     align-items: center;
     padding: 0 0 15px 0;
+    margin: 0;
 }
 /* mobile menu settings */
 
@@ -184,6 +188,44 @@ header .user-controls a:first-child{
     .mobile-icons a:first-child{
         display: none;
     }
+    /* second level menu styles */
+header .menu-items details ul{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    width: 100%;
+    background-color: var(--color-white);
+    border-radius: 10px;
+    left: 0;
+    padding: 50px;
+    top: 100%;
+    margin: 0;
+}
+header .menu-items details ul li{
+    width: max-content;
+}
+header .menu-items details ul li a{
+    display: flex;
+    align-items: center;
+}
+header .menu-items-wrapper .menu-items details ul li a{
+    color: var(--header-font-color-black);
+}
+header .menu-items details ul li a:hover{
+    color: var(--sublist-hover-color);
+}
+header .menu-items details ul li a::after{
+    content: '';
+    background-image: url("https://www.bannersolutions.com/icons/DashboardDropdown.svg");
+    width: 24px;
+    height: 24px;
+}
+header .menu-items details ul li a::before{
+    content: '';
+    border-left: 4px dotted var(--sublist-border-color);
+    width: 10px;
+    height: 20px;
+}
 }
 
 
