@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="81" viewBox="0 0 80 81">
+  <g id="Group_55726" data-name="Group 55726" transform="translate(-402 -3478)">
+    <rect id="Rectangle_33765" data-name="Rectangle 33765" width="80" height="80" transform="translate(402 3478)" fill="none"/>
+    <path id="Subtraction_32" data-name="Subtraction 32" d="M16188,12857a23.932,23.932,0,1,1,9.342-1.886A23.861,23.861,0,0,1,16188,12857Zm0-30a12,12,0,1,0,8.484,3.516A11.918,11.918,0,0,0,16188,12827Z" transform="translate(-15756 -9324)" fill="#ffd99d"/>
+    <path id="Ellipse_676_-_Outline" data-name="Ellipse 676 - Outline" d="M24,4A20,20,0,0,0,9.858,38.142,20,20,0,1,0,38.142,9.858,19.869,19.869,0,0,0,24,4m0-4A24,24,0,1,1,0,24,24,24,0,0,1,24,0Z" transform="translate(408 3485)" fill="#4a25aa"/>
+    <g id="Group_7290" data-name="Group 7290" transform="translate(464.902 3512.716) rotate(45)">
+      <path id="Union_44" data-name="Union 44" d="M10.982,37.98l1.383-1.422v-16.2a4,4,0,0,1,2-3.462,6.965,6.965,0,0,0,2.507-2.487,6.91,6.91,0,1,0-11.92,0,6.967,6.967,0,0,0,2.508,2.487,4,4,0,0,1,2,3.462V36.493l1.528,1.487m.078,5.657L5.454,38.182V20.357a10.91,10.91,0,1,1,10.911,0V38.182Z" fill="#4a25aa"/>
+      <circle id="Ellipse_627" data-name="Ellipse 627" cx="2.727" cy="2.727" r="2.727" transform="translate(8.183 5.454)" fill="#4a25aa"/>
+    </g>
+    <path id="Ellipse_677_-_Outline" data-name="Ellipse 677 - Outline" d="M12,4a8,8,0,1,0,8,8,8.009,8.009,0,0,0-8-8m0-4A12,12,0,1,1,0,12,12,12,0,0,1,12,0Z" transform="translate(420 3503)" fill="#4a25aa"/>
+    <path id="Path_18002" data-name="Path 18002" d="M16338,1028.091a2,2,0,0,1-2-2V1017a2,2,0,0,1,4,0v9.091A2,2,0,0,1,16338,1028.091Z" transform="translate(-15905.909 2498.364)" fill="#4a25aa"/>
+  </g>
+</svg>
