@@ -2,6 +2,7 @@
 :root {
     --header-font-color-white: #ffffff;
     --header-font-color-black: #000000;
+    --font-color-white:#ffffff;
     --header-border-white-color:#ffffff;
     --header-border-black-color:#000000;
     --header-hr-color:#999999;
@@ -14,4 +15,8 @@
     --sublist-border-color: #FFB846;
     --sublist-hover-color: #4A25AA;
     --contact-icon-bg-color: #F1EBFF;
+    --details-bg-color:#EEE7FF;
+    --details-font-color:#191919;
+    --placeholder-color: #757575;
+    --search-button-color:#7f55EA;
 }
