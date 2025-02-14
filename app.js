@@ -20,7 +20,8 @@ window.addEventListener("scroll", ()=> {
         header.querySelector(".mobile-menu img").src="./images/balck-hamburger-menu.png";
         document.querySelectorAll(".menu-items li details").forEach(detail => {
             detail.removeAttribute("open");
-        });        
+        });       
+        header.querySelector(".search-all").style.display="flex"; 
     } else {
         header.style.position="absolute";
         header.classList.remove("scrolled");     
@@ -29,6 +30,7 @@ window.addEventListener("scroll", ()=> {
         header.querySelector(".search").src="./images/search-wh.svg";
         header.querySelector(".cart").src="./images/cart-wh.svg";
         header.querySelector(".mobile-menu img").src="https://www.bannersolutions.com/static/icons/homepage/menu_black_24dp.svg";
+        header.querySelector(".search-all").style.display="none"; 
     }
 });
 // function for mobile navigation to appear and disappear
