@@ -294,6 +294,7 @@ main *{
     }
     .mlti-col-wrapper ul{
         grid-template-columns: auto auto;
+        width: 100%;
     }
     .hero-text h1{
       font-size: var(--font-size-h1-large);
@@ -306,7 +307,7 @@ main *{
       margin: 0 auto;
     }
 }
-@media (min-width:1200px) {
+@media (min-width:960px) {
     .mlti-col-wrapper ul{
         grid-template-columns: auto auto auto auto;
     }
