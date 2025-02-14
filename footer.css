@@ -122,7 +122,7 @@ footer .container .row {
     }
 /* Desktop styles */
 @media (min-width: 990px) {
-    .container .row {
+    footer .container .row {
         padding: 0;
     }
 
