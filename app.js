@@ -22,7 +22,7 @@ window.addEventListener("scroll", ()=> {
             detail.removeAttribute("open");
         });        
     } else {
-        header.style.position="relative";
+        header.style.position="absolute";
         header.classList.remove("scrolled");     
         document.querySelector(".logo img").src="https://www.bannersolutions.com/static/img/homepage/BSlogo.png"; 
         header.querySelector(".phone").src="./images/phone-wh.svg";
@@ -63,5 +63,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 }
+
+// hero section details settings
+document.querySelectorAll(".product-search details").forEach((detail, _, detailsArray) => {
+    detail.addEventListener("toggle", () => {
+        if (detail.open) {
+            detailsArray.forEach(otherDetail => {
+                if (otherDetail !== detail) otherDetail.open = false;
+            });
+        } else if (![...detailsArray].some(d => d.open)) {
+            detail.open = true;
+        }
+    });
+});
+
 
 });
