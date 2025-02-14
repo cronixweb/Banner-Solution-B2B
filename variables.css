@@ -1,6 +1,8 @@
 /* Add only font sizes or weight */
 :root {
   /* font sizes */
+    --font-size-small: 11px;
+    --font-size-root: 14px;
     --font-size-16: 16px;
     --font-size-h3: 20px;
     /* font-weight */

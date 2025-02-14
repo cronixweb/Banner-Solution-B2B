@@ -62,20 +62,53 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     });
-}
+    }
 
-// hero section details settings
-document.querySelectorAll(".product-search details").forEach((detail, _, detailsArray) => {
-    detail.addEventListener("toggle", () => {
-        if (detail.open) {
-            detailsArray.forEach(otherDetail => {
-                if (otherDetail !== detail) otherDetail.open = false;
-            });
-        } else if (![...detailsArray].some(d => d.open)) {
-            detail.open = true;
-        }
+    // hero section details settings
+    document.querySelectorAll(".product-search details").forEach((detail, _, detailsArray) => {
+        detail.addEventListener("toggle", () => {
+            if (detail.open) {
+                detailsArray.forEach(otherDetail => {
+                    if (otherDetail !== detail) otherDetail.open = false;
+                });
+            } else if (![...detailsArray].some(d => d.open)) {
+                detail.open = true;
+            }
+        });
     });
-});
 
-
+    //product category details JS
+    const container = document.querySelector('.categories-section .row.g-4');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    
+    // Calculate single card width including margins
+    const card = document.querySelector('.category-card');
+    const cardWidth = card.offsetWidth + 10; // 10px for margin
+    
+    nextBtn.addEventListener('click', () => {
+        container.scrollBy({
+            left: cardWidth,
+            behavior: 'smooth'
+        });
+        setTimeout(updateArrows, 100);
+    });
+    
+    prevBtn.addEventListener('click', () => {
+        container.scrollBy({
+            left: -cardWidth,
+            behavior: 'smooth'
+        });
+        setTimeout(updateArrows, 100);
+    });
+    
+    // Update arrow visibility
+    const updateArrows = () => {
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        prevBtn.style.opacity = container.scrollLeft <= 0 ? '0.3' : '1';
+        nextBtn.style.opacity = container.scrollLeft >= maxScroll ? '0.3' : '1';
+    };
+    
+    container.addEventListener('scroll', updateArrows);
+    updateArrows();
 });
