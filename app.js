@@ -21,7 +21,9 @@ window.addEventListener("scroll", ()=> {
         document.querySelectorAll(".menu-items li details").forEach(detail => {
             detail.removeAttribute("open");
         });       
-        header.querySelector(".search-all").style.display="flex"; 
+        if (window.innerWidth > 1200) {
+            header.querySelector(".search-all").style.display="flex"; 
+        }
     } else {
         header.style.position="absolute";
         header.classList.remove("scrolled");     

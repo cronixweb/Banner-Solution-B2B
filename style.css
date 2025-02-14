@@ -22,6 +22,37 @@ main *{
 }
 .product-search details summary{
     padding:  9px 12px 6px 12px;
+    list-style-type: none;
+    font-family: var(--font-family-inter);
+}
+.product-search details[open]{
+  background-color: var(--color-white);
+}
+.product-search details[open] summary{
+  color: var(--button-color);
+}
+.product-search details summary::before{
+  content: '';
+  background-image: url("https://www.bannersolutions.com/static/icons/plp/box_black.svg");
+  width: 24px;
+  height: 18px;
+  display: inline-block;
+  margin-right  : 10px;
+}
+
+.product-search details[open] summary::before{
+  background-image: url("https://www.bannersolutions.com/static/icons/plp/box.svg");
+}
+.product-search details:last-child summary::before{
+  content: '';
+  background-image: url("https://www.bannersolutions.com/static/icons/plp/car.svg");
+  width: 24px;
+  height: 18px;
+  display: inline-block;
+  margin-right  : 10px;
+}
+.product-search details[open]:last-child summary::before{
+  background-image: url("https://www.bannersolutions.com/static/icons/plp/car_blue.svg");
 }
 .product-search details select:has(option.placeholder:checked){
     color: var(--placeholder-color);
@@ -32,13 +63,31 @@ main *{
     flex-direction: column;
     gap: 20px;
 }
+.hero-text h1{
+  font-size: var(--font-size-h1-small);
+  line-height: 1.5;
+  font-family: var(--font-family-inter);
+  font-weight: 600;
+  width: 88%;
+  margin: 0 auto;
+}
+.hero-text p:first-of-type{
+  font-size: var(--font-size-root);
+  font-family: var(--font-family-inter);
+}
+.hero-text p:last-of-type{
+  font-size: var(--font-size-small);
+  font-family: var(--font-family-inter);
+}
 .hero-text a{
-    color: var(--font-color-white);
-    background: transparent;
-    border: 1px solid var(--color-white);
-    padding: 15px 30px;
-    width: max-content;
-    margin: 0 auto;
+  color: var(--font-color-white);
+  background: transparent;
+  border: 1px solid var(--color-white);
+  padding: 15px 30px;
+  width: max-content;
+  margin: 0 auto;
+  font-size: var(--font-size-small);
+  font-family: var(--font-family-inter);
 }
 .product-search details ul{
     position: absolute;
@@ -46,19 +95,21 @@ main *{
     width: 100%;
     padding: 0;
     background-color: var(--color-white);
-    padding: 20px 0;
+    padding: 20px 16px;
     border-radius: 0 0 6px 6px;
 }
 .product-search details ul li input, .product-search details ul li select{
-    border: none;
-    padding: 15px;
-    width: 90%;
+  border: none;
+  padding: 15px;
+  width: 90%;
+  font-size: var(--font-size-small);
+  font-family: var(--font-family-inter);
 }
 .product-search details ul li:last-child{
     margin-top: 20px;
 }
 .product-search details ul li:last-child a{
-    background-color: var(--search-button-color);
+    background-color: var(--button-color);
     padding: 15px 76px;
     color: var(--font-color-white);
     border-radius: 6px;
@@ -232,7 +283,10 @@ main *{
     .product-search details ul li select{
         width: max-content;
     }
-    .product-search details ul li a{
+    .product-search details ul li select#lock-category{
+      width: 200px;
+    }
+    .product-search details ul li:last-child{
         margin: 0;
     }
     .hero-text{
@@ -240,6 +294,12 @@ main *{
     }
     .mlti-col-wrapper ul{
         grid-template-columns: auto auto;
+    }
+    .hero-text h1{
+      font-size: var(--font-size-h1-large);
+    }
+    .hero-text p:first-of-type{
+      font-size: var(--font-size-medium);
     }
 }
 @media (min-width:1200px) {
