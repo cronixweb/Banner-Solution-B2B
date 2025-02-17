@@ -2,6 +2,7 @@
 :root {
   /* font sizes */
     --font-size-small: 12px;
+    --font-size-small-nav: 14px;
     --font-size-medium: 22px;
     --font-size-root: 14px;
     --font-size-mobile-nav: 14px;

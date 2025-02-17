@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/base.css">
-    <link rel="stylesheet" href="/variables.css">
-    <link rel="stylesheet" href="footer.css">
-    <link rel="stylesheet" href="/header.css">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./variables.css">
+    <link rel="stylesheet" href="./footer.css">
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -120,10 +120,10 @@
                             <img src="./images/phone-wh.svg" alt="call us" width="24" height="24" class="phone"/>
                         </a>
                         <a href="/">
-                            <img src="./images/search-wh.svg" alt="search icon" width="24" height="24" class="search"/>
+                            <img src="https://www.bannersolutions.com/static/icons/homepage/shopping_cart_white.svg" alt="search icon" width="24" height="24" class="cart"/>
                         </a>
                         <a href="/">
-                            <img src="./images/cart-wh.svg" alt="cart icon" width="24" height="24" class="cart"/>
+                            <img src="https://www.bannersolutions.com/static/icons/homepage/notifications.svg" alt="cart icon" width="24" height="24" class="cart bell"/>
                         </a>
                     </div>
                     <div class="user-controls">
@@ -146,9 +146,11 @@
                     <summary>All Products</summary>
                     <ul>
                         <li>
-                            <input type="text" id="keyword" placeholder="Enter Part#/Keyword" />
+                            <label for="keyword">Part#/Keyword</label>
+                                <input type="text" id="keyword" placeholder="Enter Part#/Keyword" />
                         </li>
                         <li>
+                            <label for="lock-category">Product Category</label>
                             <select name="lock-category" id="lock-category">
                                 <option  class="placeholder" disabled selected hidden  value="Select Category">Select Category</option>
                                 <option value="Commercial Locks">Commercial Locks</option>
@@ -157,6 +159,7 @@
                             </select>         
                         </li>
                         <li>
+                            <label for="maufacture">Manufacturer</label>
                             <select name="maufacture" id="maufacture">
                                 <option  class="placeholder" disabled selected hidden  value="Select Mfg.">Select Mfg.</option>
                                 <option value="Aable">Aable</option>
@@ -165,6 +168,7 @@
                             </select>         
                         </li>
                         <li>
+                            <img class="search-prod" src="./images/search-wh.svg" alt="search">
                             <a href="#">Search</a>
                         </li>
                     </ul>
@@ -173,6 +177,7 @@
                     <summary>Automative</summary>
                     <ul>
                         <li>
+                            <label for="automative-year">Year</label>
                             <select name="automative-year" id="automative-year">
                                 <option  class="placeholder" disabled selected hidden  value="Select Year">Select Year</option>
                                 <option value="2000">2000</option>
@@ -181,6 +186,7 @@
                             </select>         
                         </li>
                         <li>
+                            <label for="automative-manufacturer">Make</label>
                             <select name="automative-manufacturer" id="automative-manufacturer">
                                 <option  class="placeholder" disabled selected hidden  value="Select Make">Select Make</option>
                                 <option value="Acura">Acura</option>
@@ -189,6 +195,7 @@
                             </select>         
                         </li>
                         <li>
+                            <label for="automative-month">Model</label>
                             <select name="cars" id="automative-month">
                                 <option  class="placeholder" disabled selected hidden  value="Select Month">Select Month</option>
                                 <option value="January">January</option>

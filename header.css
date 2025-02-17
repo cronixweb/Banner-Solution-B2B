@@ -5,6 +5,7 @@ header *{
 }
 header .container{
     position: relative;
+    max-width: unset;
 }
 header .col-auto{
     padding: 0;
@@ -23,7 +24,7 @@ header a{
     color : var( --header-font-color-white);
 }
 header .container{
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     padding: 0;
 }
@@ -152,7 +153,7 @@ header .user-controls a:first-child{
         padding-right: 30px;
     }
     .header{
-        margin-top: 10px;
+        margin-top: 20px;
     }
     
 }
@@ -203,7 +204,7 @@ header .user-controls a:first-child{
     }
     header .menu-items-wrapper .menu-items li a, header .menu-items-wrapper .menu-items li p {
         color: var(--header-font-color-white);
-        font-size: var(--font-size-small);
+        font-size: var(--font-size-small-nav);
     }
     header .menu-items-wrapper .menu-items>li p.active, .menu-items-wrapper .menu-items>li p:hover, header .menu-items-wrapper .menu-items>li details[open] p{
         color: var(--hover-color);
@@ -230,10 +231,7 @@ header .user-controls a:first-child{
     }
     header .user-controls a{
         font-size: var(--font-size-small);
-    }
-    .mobile-icons img{
-        width: 18px;
-        height: 18px;
+        font-weight: 700;
     }
     .mobile-icons a:first-child{
         display: none;
