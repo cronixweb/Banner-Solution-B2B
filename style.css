@@ -10,21 +10,35 @@ main *{
     height: 1000px;
 }
 .product-search{
-    width: 92.5%;
-    margin: 0 auto;
     position: relative;
+    padding: 0;
     padding-top: 150px;
-    max-width: 800px;
+    margin: 0;
+    justify-content: center;
+}
+.product-search .search-prod{
+  position: absolute;
+  left: 35%;
+  width: 18px;
+  height: 18px;
 }
 .product-search details{
     background-color: var(--details-bg-color);
     color: var(--details-font-color);
     border-radius: 10px 10px 0 0;
     padding: 0;
+    width: 50%;
+    max-width: 185px;
 }
 .product-search details ul li{
   position: relative;
   margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.product-search details ul li label{
+  font-weight: 600;
 }
 .product-search details ul li::before{
   content: '';
@@ -55,7 +69,7 @@ main *{
   content: none;
 }
 .product-search details summary{
-    padding:  9px 6.5px 6px 5px;
+    padding:  9px 10px 6px 10px;
     list-style-type: none;
     font-family: var(--font-family-inter);
 }
@@ -106,6 +120,9 @@ main *{
   margin: 0 auto;
   text-transform: capitalize;
 }
+.hero-text p{
+  margin: 0;
+}
 .hero-text p:first-of-type{
   font-size: var(--font-size-root);
   font-family: var(--font-family-inter);
@@ -113,6 +130,8 @@ main *{
 .hero-text p:last-of-type{
   font-size: var(--font-size-small);
   font-family: var(--font-family-inter);
+  width: 80%;
+  margin: 0 auto;
 }
 .hero-text a{
   color: var(--font-color-white);
@@ -126,12 +145,12 @@ main *{
 }
 .product-search details ul{
     position: absolute;
-    left: 0;
     width: 100%;
     padding: 0;
     background-color: var(--color-white);
     padding: 20px 16px;
     border-radius: 0 0 6px 6px;
+    max-width: 370px;
 }
 .product-search details ul li input, .product-search details ul li select{
   border: none;
@@ -139,9 +158,13 @@ main *{
   width: 90%;
   font-size: var(--font-size-small);
   font-family: var(--font-family-inter);
+  padding-left: 0 ;
 }
 .product-search details ul li:last-child{
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .product-search details ul li:last-child a{
     background-color: var(--button-color);
@@ -231,6 +254,8 @@ main *{
     padding: 10px;
     border-radius: 8px;
     margin-top: 15%;
+    width: 22%;
+    height: auto;
 }
 .mlti-col-wrapper .note{
     display: flex;
@@ -239,6 +264,8 @@ main *{
     justify-content: center;
     column-gap: 20px;
     font-weight: var(--font-weight-notes);
+    font-family: var(--font-family-inter);
+    width: 100%;
 }
 .mlti-col-wrapper .note p span{
     border-bottom:4px dotted var(--hover-color) ;
@@ -366,11 +393,18 @@ main *{
     
 }
 
-@media (min-width:768px) {
+@media (min-width:958px) {
+    .product-search{
+     width: 75%; 
+    }
     .product-search details ul{
         display: flex;
-        justify-content: space-evenly;
         align-items: center;
+        width: max-content;
+        max-width: unset;
+    }
+    .product-search .search-prod{
+      left: 20%;
     }
     .product-search details ul li{
       min-width: 162px;
@@ -385,12 +419,12 @@ main *{
     .product-search details ul li::before{
       height: 100%;
       width: 1px;
-      left: 100%;
+      left: 92%;
       bottom: 0;
     }
     .product-search details ul li::after{
       bottom: 25%;
-      left: 95%;
+      left: 88%;
       margin: 0;
       padding: 0;
       color: black;
@@ -419,7 +453,6 @@ main *{
     }
     .hero-text p:last-of-type{
       width: 45%;
-      margin: 0 auto;
     }
 }
 @media (min-width:960px) {
@@ -430,7 +463,6 @@ main *{
         margin-top: 30px;
     }
 }
-
 
 
 
