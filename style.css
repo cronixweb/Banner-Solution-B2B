@@ -565,6 +565,7 @@ main *{
     flex: 1;
     padding: 38px;
     overflow: hidden;
+    height: 216px;
   }
 
   .service-title {
