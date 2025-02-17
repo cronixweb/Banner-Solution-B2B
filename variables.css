@@ -32,4 +32,24 @@
   --color-text-gray: #4E4E4E; /* Added for category details */
   --color-accent-yellow: #FFC107; /* Added for dotted border under h2 */
   --color-light-purple:#0C78C7;
+
+
+    /* Orange Theme Colors */
+    --color-orange-light: #fff8ec;
+    --color-orange-medium: #ffeccc;
+    --color-orange-dark: #ffe2b4;
+    
+    /* Blue Theme Colors */
+    --color-blue-light: #f4f9fc;
+    --color-blue-medium: #e5f5fc;
+    --color-blue-dark: #d2eefd;
+    --color-blue-darker: #b4e1f8;
+    
+    /* Purple Theme Colors */
+    --color-purple-light: #f8f5ff;
+    --color-purple-medium: #f1ebff;
+    --color-purple-dark: #e7deff;
+    --color-purple-darker: #d9cbff;
 }
+
+
