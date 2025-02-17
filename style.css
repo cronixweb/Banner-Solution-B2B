@@ -603,7 +603,7 @@ main *{
     }
   
     .map-container img {
-        width: 750px;
+        max-width: 750px;
         height: 556px;
         object-fit: contain;
         max-width: none;  /* Remove the max-width restriction */
