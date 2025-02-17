@@ -304,7 +304,7 @@ main *{
 }
 
 .category-card {
-    margin-bottom: 0;
+    margin-bottom: 0 auto;
 }
 
     .slider-container {
@@ -616,3 +616,460 @@ main *{
   
   
   
+
+
+
+  /* Serivce section */
+
+  .link {
+    color: var( --color-button-primary);
+    text-decoration: none;
+    font-size: 12.8px;
+    font-weight: 500;
+  }
+
+  /* Main Container */
+  .services-container {
+  max-width: 100%; /* Set a fixed max width */ 
+    background-color: var(  --color-text-white);
+    border-radius: 24px 24px 0 0;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Section Header */
+  .section-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 28.8px;
+    font-weight: 700;
+    color: var( --color-text-primary);
+    margin-bottom: 16px;
+  }
+
+
+
+  .divider {
+    width: 55px;
+    border-top: 4px dotted var( --color-accent-yellow);
+    margin: 0 auto;
+  }
+
+  /* Service Cards */
+  .service-card {
+    width: 100%; /* Changed from fixed 1200px to percentage-based */
+    max-width: 1140px; /* Maintains maximum width */
+    margin: 45px 0;
+    border: 1px solid var( --color-background-light);
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    display: flex;
+    min-height: 211px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .service-content {
+    flex: 1;
+    padding: 38px;
+    overflow: hidden;
+    height: 216px;
+  }
+
+  .service-title {
+    font-size: 24px;
+    color:var(--color-text-gray);
+    margin: 0 0 17px;
+    font-size: 700;
+  }
+
+  .service-description {
+    font-size: 12.8px;
+    color: var(--color-text-gray);
+    line-height: 1.5;
+    width: 200px;
+    font-weight: 500;
+  }
+
+  .action-links {
+    margin-top: 41px;
+    display: flex;
+    gap: 24px;
+  }
+
+  /* Features Section */
+  .service-features {
+  
+    position: relative;
+  }
+
+  .feature {
+    position: absolute;
+    width: 240px;
+    height: 100%;
+    border-radius: 162px 12px 12px 162px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.3s ease-in-out;
+    overflow: hidden;
+    right: 0;
+  }
+
+  .feature {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+
+  .feature-icon {
+    margin-right: 140px;
+    margin-top: 70px;
+  }
+
+
+  .feature-text {
+    font-size: 12.8px;
+    color: var(--color-text-gray);
+    text-align: center;
+    width: 120px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    height: 100px;
+  }
+
+
+  .service-title , .action-links {
+    width: 400px;
+  }
+
+
+  /* For Electronic Access Control (Orange variations) */
+  .service-features:hover .feature--orange {
+    width: 390px;  /* Widest */
+  }
+  .service-features:hover .feature--light-orange {
+    width: 350px;  /* Medium */
+  }
+  .service-features:hover .feature--dark-orange {
+    width: 310px;  /* Smallest */
+  }
+
+  /* For Glass Services (Blue variations) */
+  .service-features:hover .feature--blue {
+    width: 390px;  /* Widest */
+  }
+  .service-features:hover .feature--light-blue {
+    width: 350px;  /* Medium */
+  }
+  .service-features:hover .feature--medium-blue {
+    width: 310px;  /* Smaller */
+  }
+  .service-features:hover .feature--dark-blue {
+    width: 270px;  /* Smallest */
+  }
+
+  /* For Create Project (Purple variations) */
+  .service-features:hover .feature--purple {
+    width: 390px;  /* Widest */
+  }
+  .service-features:hover .feature--light-purple {
+    width: 350px;  /* Medium */
+  }
+  .service-features:hover .feature--medium-purple {
+    width: 310px;  /* Smaller */
+  }
+  .service-features:hover .feature--dark-purple {
+    width: 270px;  /* Smallest */
+  }
+
+
+  /* For Electronic Access Control (Orange variations) */
+  .service-features:hover .feature--orange .feature-icon {
+    margin-right: 290px;  /* Largest margin */
+  }
+  .service-features:hover .feature--light-orange .feature-icon {
+    margin-right: 250px;  /* Medium margin */
+  }
+  .service-features:hover .feature--dark-orange .feature-icon {
+    margin-right: 210px;  /* Smallest margin */
+  }
+
+  /* For Glass Services (Blue variations) */
+  .service-features:hover .feature--blue .feature-icon {
+    margin-right: 290px;  /* Largest margin */
+  }
+  .service-features:hover .feature--light-blue .feature-icon {
+    margin-right: 250px;  /* Medium margin */
+  }
+  .service-features:hover .feature--medium-blue .feature-icon {
+    margin-right: 210px;  /* Smaller margin */
+  }
+  .service-features:hover .feature--dark-blue .feature-icon {
+    margin-right: 170px;  /* Smallest margin */
+  }
+
+  /* For Create Project (Purple variations) */
+  .service-features:hover .feature--purple .feature-icon {
+    margin-right: 290px;  /* Largest margin */
+  }
+  .service-features:hover .feature--light-purple .feature-icon {
+    margin-right: 250px;  /* Medium margin */
+  }
+  .service-features:hover .feature--medium-purple .feature-icon {
+    margin-right: 210px;  /* Smaller margin */
+  }
+  .service-features:hover .feature--dark-purple .feature-icon {
+    margin-right: 170px;  /* Smallest margin */
+  }
+
+  /* For Electronic Access Control (Orange variations) */
+  .service-features:hover .feature--orange .feature-text {
+    opacity: 1;
+    margin-right: 285px;  /* Largest margin */
+  }
+  .service-features:hover .feature--light-orange .feature-text {
+    opacity: 1;
+    margin-right: 245px;  /* Medium margin */
+  }
+  .service-features:hover .feature--dark-orange .feature-text {
+    opacity: 1;
+    margin-right: 205px;  /* Smallest margin */
+  }
+
+  /* For Glass Services (Blue variations) */
+  .service-features:hover .feature--blue .feature-text {
+    opacity: 1;
+    margin-right: 285px;  /* Largest margin */
+  }
+  .service-features:hover .feature--light-blue .feature-text {
+    opacity: 1;
+    margin-right: 245px;  /* Medium margin */
+  }
+  .service-features:hover .feature--medium-blue .feature-text {
+    opacity: 1;
+    margin-right: 205px;  /* Smaller margin */
+  }
+  .service-features:hover .feature--dark-blue .feature-text {
+    opacity: 1;
+    margin-right: 165px;  /* Smallest margin */
+  }
+
+  /* For Create Project (Purple variations) */
+  .service-features:hover .feature--purple .feature-text {
+    opacity: 1;
+    margin-right: 285px;  /* Largest margin */
+  }
+  .service-features:hover .feature--light-purple .feature-text {
+    opacity: 1;
+    margin-right: 233px;/* Medium margin */
+  }
+  .service-features:hover .feature--medium-purple .feature-text {
+    opacity: 1;
+    margin-right: 184px;  /* Smaller margin */
+  }
+  .service-features:hover .feature--dark-purple .feature-text {
+    opacity: 1; 
+    margin-right: 165px;  /* Smallest margin */
+  }
+
+
+
+  .service-features:hover .feature-icon {
+    margin-right: 250px;
+  }
+
+  .service-features:hover .feature-text {
+    opacity: 1;
+
+  }
+
+  /* Color Variations */
+/* Color Variations */
+.feature--orange { 
+  background: var(--color-orange-light);    
+  right: 170px; 
+}
+.feature--light-orange { 
+  background: var(--color-orange-medium);
+  right: 55px;
+}
+.feature--dark-orange { 
+  background: var(--color-orange-dark); 
+  right: -60px; 
+}
+
+.feature--blue { 
+  background: var(--color-blue-light);    
+  right: 270px;
+}
+.feature--light-blue { 
+  background: var(--color-blue-medium); 
+  right: 170px; 
+}
+.feature--medium-blue { 
+  background: var(--color-blue-dark);    
+  right: 60px; 
+}
+.feature--dark-blue { 
+  background: var(--color-blue-darker); 
+  right: -60px; 
+}
+
+.feature--purple { 
+  background: var(--color-purple-light); 
+  right: 250px; 
+}
+.feature--light-purple { 
+  background: var(--color-purple-medium); 
+  right: 150px; 
+}
+.feature--medium-purple { 
+  background: var(--color-purple-dark);
+  right: 55px; 
+}
+.feature--dark-purple { 
+  background: var(--color-purple-darker); 
+  right: -60px; 
+}
+
+
+
+
+
+
+
+  @media screen and (max-width: 998px) {
+    .services-container {
+        padding: 45px;
+        height: 1350px;
+        
+      
+    }
+    .service-card {
+        width: 90%; /* Changed from 420px */
+        max-width: 420px;
+        margin: 20px auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        min-height: 240px;
+        padding: 24px;
+        position: relative;
+        padding-bottom: 60px;
+    }
+    /* Service Content Section */
+    .service-content {
+        padding: 0;
+        margin-bottom: 16px; /* Reduced from 24px to 16px */
+    }
+    .service-title {
+        font-size: 20px;
+        width: 100%;
+        margin-bottom: 8px;
+        text-align: center;
+    }
+
+    .service-description {
+        width: 100%;
+        font-size: 14px;
+        color: var(--color-text-gray);
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    /* Features Slider Section */
+    .service-features {
+        position: relative;
+        height: 120px;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 0; /* Remove top margin */
+    }
+    .feature {
+        width: 250px !important;
+        height: 80px;
+        border-radius: 50px !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%); /* Initial centering */
+        opacity: 1;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        padding: 0 20px;
+        margin: 0; /* Remove any margins */
+    }
+
+    .feature-icon {
+        width: 24px;
+        height: 24px;
+        margin: 0 10px 0 0 !important; /* Ensure margin between icon and text */
+    }
+
+    .feature-text {
+        margin: 0 !important; /* Remove any margins */
+        font-size: 14px;
+        white-space: wrap; /* Prevent text wrapping */
+        opacity: 1;
+    }
+
+    /* Slider Navigation Dots */
+    .slider-dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background:var(--color-background-hover);
+    }
+
+    .dot.active {
+        background:var( --color-accent-yellow);
+    }
+
+    /* Action Links Section */
+    .action-links {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 24px;
+        box-sizing: border-box;
+    }
+
+    .link {
+        font-size: 14px;
+        font-weight: 500;
+        color: var( --color-button-primary);
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+
+  }
+
+  }
+
+  @media screen and (max-width: 480px) {
+    .feature {
+        width: 200px !important;
+      
+    }
+  }

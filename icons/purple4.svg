@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <g id="Group_57032" data-name="Group 57032" transform="translate(-816 -256.113)">
+    <rect id="Rectangle_35824" data-name="Rectangle 35824" width="64" height="64" transform="translate(816 256.113)" fill="none"/>
+    <path id="Rectangle_35825" data-name="Rectangle 35825" d="M3.206,3.206V48.085H41.674V3.206H3.206M2.4,0H42.475a2.4,2.4,0,0,1,2.4,2.4V48.886a2.4,2.4,0,0,1-2.4,2.4H2.4a2.4,2.4,0,0,1-2.4-2.4V2.4A2.4,2.4,0,0,1,2.4,0Z" transform="translate(825.617 263.213)" fill="#0c78c7"/>
+    <path id="Path_18675" data-name="Path 18675" d="M-334.752,12204H-360.4a1.6,1.6,0,0,1-1.6-1.6,1.6,1.6,0,0,1,1.6-1.6h25.645a1.6,1.6,0,0,1,1.6,1.6A1.6,1.6,0,0,1-334.752,12204Z" transform="translate(1195.631 -11923.956)" fill="#0c78c7"/>
+    <path id="Path_18676" data-name="Path 18676" d="M-334.752,12204H-360.4a1.6,1.6,0,0,1-1.6-1.6,1.6,1.6,0,0,1,1.6-1.6h25.645a1.6,1.6,0,0,1,1.6,1.6A1.6,1.6,0,0,1-334.752,12204Z" transform="translate(1195.631 -11916.577)" fill="#0c78c7"/>
+    <path id="Path_18677" data-name="Path 18677" d="M-347.575,12204H-360.4a1.6,1.6,0,0,1-1.6-1.6,1.6,1.6,0,0,1,1.6-1.6h12.823a1.6,1.6,0,0,1,1.6,1.6A1.6,1.6,0,0,1-347.575,12204Z" transform="translate(1195.631 -11909.364)" fill="#0c78c7"/>
+    <path id="Rectangle_35826" data-name="Rectangle 35826" d="M4,0H18a4,4,0,0,1,4,4V4a6,6,0,0,1-6,6H6A6,6,0,0,1,0,4V4A4,4,0,0,1,4,0Z" transform="translate(837 261.113)" fill="#b4e1f8"/>
+    <path id="Rectangle_35826_-_Outline" data-name="Rectangle 35826 - Outline" d="M3.206,3.206h0V6.411a1.6,1.6,0,0,0,1.6,1.6H20.837a1.6,1.6,0,0,0,1.6-1.6V3.206s0,0,0,0H3.206M3.206,0H22.44a3.206,3.206,0,0,1,3.206,3.206V6.411a4.808,4.808,0,0,1-4.808,4.808H4.808A4.808,4.808,0,0,1,0,6.411V3.206A3.206,3.206,0,0,1,3.206,0Z" transform="translate(835.234 260.809)" fill="#0c78c7"/>
+    <rect id="Rectangle_35827" data-name="Rectangle 35827" width="9" height="11" rx="4.5" transform="translate(853 297.113)" fill="#b4e1f8"/>
+    <path id="Rectangle_35827_-_Outline" data-name="Rectangle 35827 - Outline" d="M5.61,3.206a2.4,2.4,0,1,0,2.4,2.4,2.407,2.407,0,0,0-2.4-2.4M5.61,0A5.61,5.61,0,1,1,0,5.61,5.61,5.61,0,0,1,5.61,0Z" transform="translate(851.262 296.872)" fill="#0c78c7"/>
+  </g>
+</svg>
