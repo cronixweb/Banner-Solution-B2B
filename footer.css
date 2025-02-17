@@ -20,6 +20,8 @@
     font-size: 14px;
 }
 
+
+
 .footer-heading {
     font-family: var(--font-primary);
     color: var(--color-text-primary);
@@ -106,6 +108,8 @@ footer .container .row {
     
 }
 
+
+
 .mailing-sec .footer-heading {
     border-bottom: none;
 }
@@ -178,9 +182,13 @@ footer .container .row {
     }
 }
 
+
+
 .footer-links li a {
     word-break: break-word;
     overflow-wrap: break-word;
+    padding: 0;
+
 }
 
 .copyright {

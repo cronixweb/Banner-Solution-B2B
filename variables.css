@@ -13,6 +13,7 @@
     --font-size-h1-large:34px;
     /* font-weight */
     --font-weight-notes:500;
+    --font-weight-thick:700;
 
 
     
@@ -21,6 +22,7 @@
 
   /* Existing color variables */
   --color-text-primary: #191919;
+  --color-text-dark: #000000;
   --color-background-light: #F2F2F2;
   --color-accent-purple: #AE8FFD;
   --color-border-light: #C8C8C8;

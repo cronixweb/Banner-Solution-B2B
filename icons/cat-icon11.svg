@@ -1,9 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
-  <g id="Group_55822" data-name="Group 55822" transform="translate(-1535 -447)">
-    <rect id="Rectangle_35202" data-name="Rectangle 35202" width="80" height="80" transform="translate(1535 447)" fill="none"/>
-    <path id="Path_18275" data-name="Path 18275" d="M.76.5a3.943,3.943,0,0,1,2.2-.83L32-3.573a4.537,4.537,0,0,1,2.816.673A3.214,3.214,0,0,1,35.949-.616L36,57.539a2.991,2.991,0,0,1-.461,1.724,2.2,2.2,0,0,1-1.525.516L2.993,56.333a4.289,4.289,0,0,1-2.277-.967A3.612,3.612,0,0,1,0,53.14V2.647A3.572,3.572,0,0,1,.76.5Z" transform="translate(1551 459)" fill="#ffd99d"/>
-    <path id="Path_18275_-_Outline" data-name="Path 18275 - Outline" d="M31.95.458,4,3.58V52.42l28,3.111L31.95.458m.424-4.045a4.18,4.18,0,0,1,2.443.688A3.214,3.214,0,0,1,35.949-.616L36,57.539a2.991,2.991,0,0,1-.461,1.724,2.2,2.2,0,0,1-1.525.516L2.993,56.333a4.289,4.289,0,0,1-2.277-.967A3.612,3.612,0,0,1,0,53.14V2.647A3.572,3.572,0,0,1,.76.5a3.943,3.943,0,0,1,2.2-.83L32-3.573S32.143-3.587,32.374-3.587Z" transform="translate(1551 459)" fill="#4a25aa"/>
-    <path id="Path_18276" data-name="Path 18276" d="M16634,2337a2,2,0,0,1-2-2v-50h-9a2,2,0,0,1,0-4h11a2,2,0,0,1,2,2v52A2,2,0,0,1,16634,2337Z" transform="translate(-15037 -1822)" fill="#4a25aa"/>
-    <circle id="Ellipse_824" data-name="Ellipse 824" cx="2" cy="2" r="2" transform="translate(1576 485)" fill="#4a25aa"/>
+  <g id="Group_55823" data-name="Group 55823" transform="translate(-292 -677)">
+    <g id="Group_55730" data-name="Group 55730" transform="translate(59.508 -315)">
+      <path id="Path_17904" data-name="Path 17904" d="M16302.348,1760.508h-60a2,2,0,0,1,0-4h60a2,2,0,0,1,0,4Z" transform="translate(-16000.353 -715)" fill="#4a25aa"/>
+      <path id="Path_17905" data-name="Path 17905" d="M16302.348,1760.508h-60a2,2,0,0,1,0-4h60a2,2,0,0,1,0,4Z" transform="translate(-16000.353 -704)" fill="#4a25aa"/>
+      <path id="Ellipse_655" data-name="Ellipse 655" d="M14,4A10,10,0,1,0,24,14,10.011,10.011,0,0,0,14,4m0-4A14,14,0,1,1,0,14,14,14,0,0,1,14,0Z" transform="translate(258 1004)" fill="#4a25aa"/>
+      <rect id="Rectangle_33530" data-name="Rectangle 33530" width="16" height="64" transform="translate(264 1000)" fill="#d1bfff"/>
+      <path id="Rectangle_33530_-_Outline" data-name="Rectangle 33530 - Outline" d="M4,4V60h8V4H4M0,0H16V64H0Z" transform="translate(264 1000)" fill="#4a25aa"/>
+      <circle id="Ellipse_656" data-name="Ellipse 656" cx="3" cy="3" r="3" transform="translate(269 1015)" fill="#4a25aa"/>
+    </g>
+    <rect id="Rectangle_35252" data-name="Rectangle 35252" width="80" height="80" transform="translate(292 677)" fill="none"/>
   </g>
 </svg>
