@@ -115,4 +115,13 @@ document.addEventListener("DOMContentLoaded", () => {
     
     container.addEventListener('scroll', updateArrows);
     updateArrows();
+
+    $('.slider').slick({
+        dots: true,
+        arrows:false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
 });
