@@ -115,6 +115,17 @@ document.addEventListener("DOMContentLoaded", () => {
     
     container.addEventListener('scroll', updateArrows);
     updateArrows();
+
+    //Adding slider in banner under hero section
+    $('.slider').slick({
+        dots: true,
+        arrows:false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+
 });
 
 
@@ -204,4 +215,5 @@ window.addEventListener('resize', () => {
     document.querySelectorAll('.slider-dots').forEach(dots => dots.remove());
     document.querySelectorAll('.feature').forEach(feature => feature.style = '');
     initializeMobileSlider();
+
 });

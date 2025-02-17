@@ -149,6 +149,22 @@ main *{
     border-radius: 6px;
 }
 
+/* advertise banner section */
+.banner-slider{
+  margin-top: 50px;
+}
+.banner-slider .slider{
+  padding: 0;
+}
+.banner-slider .slider .slick-dots {
+  cursor: pointer;
+}
+.banner-slider .slider .slick-slide img{
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+}
+
 /* contact us  */
 
 .mlti-col-wrapper{
