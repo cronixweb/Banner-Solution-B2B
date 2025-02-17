@@ -2,7 +2,7 @@
   <g id="Group_55734" data-name="Group 55734" transform="translate(-541 -135)">
     <rect id="Rectangle_33490" data-name="Rectangle 33490" width="80" height="80" transform="translate(541 135)" fill="none"/>
     <path id="Rectangle_33492" data-name="Rectangle 33492" d="M6,4A2,2,0,0,0,4,6V54a2,2,0,0,0,2,2H54a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2H6M6,0H54a6,6,0,0,1,6,6V54a6,6,0,0,1-6,6H6a6,6,0,0,1-6-6V6A6,6,0,0,1,6,0Z" transform="translate(551 145)" fill="#4a25aa"/>
-    <rect id="Rectangle_33493" data-name="Rectangle 33493" width="40" height="40" rx="3" transform="translate(561 155)" fill="#ffd99d"/>
+    <rect id="Rectangle_33493" data-name="Rectangle 33493" width="40" height="40" rx="3" transform="translate(561 155)" fill="#d1bfff"/>
     <path id="Rectangle_33493_-_Outline" data-name="Rectangle 33493 - Outline" d="M4,4V36H36V4H4M3,0H37a3,3,0,0,1,3,3V37a3,3,0,0,1-3,3H3a3,3,0,0,1-3-3V3A3,3,0,0,1,3,0Z" transform="translate(561 155)" fill="#4a25aa"/>
   </g>
 </svg>
