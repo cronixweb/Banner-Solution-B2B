@@ -205,7 +205,7 @@ header .user-controls a:first-child{
         color: var(--header-font-color-white);
         font-size: var(--font-size-small);
     }
-    header .menu-items-wrapper .menu-items>li>p.active, .menu-items-wrapper .menu-items>li p:hover {
+    header .menu-items-wrapper .menu-items>li p.active, .menu-items-wrapper .menu-items>li p:hover, header .menu-items-wrapper .menu-items>li details[open] p{
         color: var(--hover-color);
         border-bottom: 4px dotted var(--hover-color);
         font-family: var(--font-family-sans-serif);
@@ -286,22 +286,31 @@ header .menu-items details ul li a::before{
 header.scrolled{
     background-color: var(--color-white);
 }
+header.scrolled .container .contact-bar a{
+    color: var(--header-font-color-black);
+}
 header.scrolled .container {
     color: var(--header-font-color-black);
 }
-header.scrolled .container a{
-    color: var(--header-font-color-black) !important;
+header.scrolled .container .header a{
+    color: var(--header-font-color-black);
 }
-header.scrolled .container p{
-    color: var(--header-font-color-black) !important;
+header.scrolled .container .header p{
+    color: var(--header-font-color-black);
+}
+header.scrolled .container .header p:hover{
+    color: var(--hover-color);
 }
 header.scrolled .container .menu-items>li:last-child a{
     border-color: var(--header-border-black-color);
 }
 header.scrolled .container .menu-items>li:last-child a:hover{
     background-color: var(--color-black);
-    color: var(--header-font-color-white) !important;
+    color: var(--header-font-color-white);
 }
 header.scrolled .container .user-controls a:first-child{
     border-color: var(--header-border-black-color);
+}
+header.scrolled .container .menu-items ul li a:hover{
+    color: var(--sublist-hover-color);
 }
