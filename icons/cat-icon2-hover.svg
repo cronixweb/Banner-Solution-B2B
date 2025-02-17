@@ -1,0 +1,14 @@
+<svg id="Group_7296" data-name="Group 7296" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <rect id="Rectangle_33775" data-name="Rectangle 33775" width="80" height="80" fill="none"/>
+  <path id="Rectangle_33776" data-name="Rectangle 33776" d="M4,4v9h9V4H4M0,0H17V17H0Z" transform="translate(59 7)" fill="#4a25aa"/>
+  <rect id="Rectangle_33778" data-name="Rectangle 33778" width="5" height="5" rx="2.5" transform="translate(65 13)" fill="#4a25aa"/>
+  <path id="Rectangle_33778_-_Outline" data-name="Rectangle 33778 - Outline" d="M2.5,0A2.5,2.5,0,1,1,0,2.5,2.5,2.5,0,0,1,2.5,0Z" transform="translate(65 13)" fill="#4a25aa"/>
+  <path id="Rectangle_33777" data-name="Rectangle 33777" d="M4,4V14h9V4H4M0,0H17V18H0Z" transform="translate(59 27)" fill="#4a25aa"/>
+  <path id="Rectangle_33779" data-name="Rectangle 33779" d="M4,4v7h9V4H4M0,0H17V15H0Z" transform="translate(59 58)" fill="#4a25aa"/>
+  <path id="Path_18007" data-name="Path 18007" d="M17013,925.092a2,2,0,0,1-2-2V893a2,2,0,0,1,4,0v30.092A2,2,0,0,1,17013,925.092Z" transform="translate(-16945.453 -857.638)" fill="#4a25aa"/>
+  <g id="Group_7295" data-name="Group 7295" transform="translate(4 23)">
+    <path id="Subtraction_28" data-name="Subtraction 28" d="M15792.5,9581a17.505,17.505,0,0,1-16.251-11h16.251a6.5,6.5,0,1,0,0-13h-16.251a17.5,17.5,0,1,1,16.251,24Z" transform="translate(-15758 -9546)" fill="#ffd99d"/>
+    <path id="Subtraction_29" data-name="Subtraction 29" d="M15792.5,9581a17.505,17.505,0,0,1-16.251-11h4.413a13.616,13.616,0,0,0,2.295,3.047,13.5,13.5,0,1,0,0-19.093,13.616,13.616,0,0,0-2.295,3.047h-4.413a17.5,17.5,0,1,1,16.251,24Z" transform="translate(-15758 -9546)" fill="#4a25aa"/>
+    <path id="Rectangle_33473_-_Outline" data-name="Rectangle 33473 - Outline" d="M6.5,4a2.5,2.5,0,0,0,0,5h28a2.5,2.5,0,0,0,0-5H6.5m0-4h28a6.5,6.5,0,0,1,0,13H6.5a6.5,6.5,0,0,1,0-13Z" transform="translate(0 11)" fill="#4a25aa"/>
+  </g>
+</svg>

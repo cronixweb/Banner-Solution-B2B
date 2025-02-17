@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="Group_55824" data-name="Group 55824" transform="translate(-1225 -916)">
+    <rect id="Rectangle_35179" data-name="Rectangle 35179" width="80" height="80" transform="translate(1225 916)" fill="none"/>
+    <rect id="Rectangle_35207" data-name="Rectangle 35207" width="80" height="80" transform="translate(1225 916)" fill="none"/>
+    <path id="Subtraction_37" data-name="Subtraction 37" d="M16423,9847h-52a6.006,6.006,0,0,1-6-6v-52a6.006,6.006,0,0,1,6-6h52a6.006,6.006,0,0,1,6,6v52A6.006,6.006,0,0,1,16423,9847Zm-44-53a4,4,0,0,0-4,4v35a4,4,0,0,0,4,4h36a4,4,0,0,0,4-4v-35a4,4,0,0,0-4-4Z" transform="translate(-15132 -8859)" fill="#ffd99d"/>
+    <path id="Rectangle_35208_-_Outline" data-name="Rectangle 35208 - Outline" d="M6,4A2,2,0,0,0,4,6V58a2,2,0,0,0,2,2H58a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2H6M6,0H58a6,6,0,0,1,6,6V58a6,6,0,0,1-6,6H6a6,6,0,0,1-6-6V6A6,6,0,0,1,6,0Z" transform="translate(1233 924)" fill="#4a25aa"/>
+    <path id="Rectangle_35209_-_Outline" data-name="Rectangle 35209 - Outline" d="M4,4H4V39s0,0,0,0H40V4s0,0,0,0H4M4,0H40a4,4,0,0,1,4,4V39a4,4,0,0,1-4,4H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(1243 935)" fill="#4a25aa"/>
+    <path id="Path_18283" data-name="Path 18283" d="M16313.335,2069.855h-4a2,2,0,0,1,0-4h4a2,2,0,0,1,0,4Z" transform="translate(-15063.523 -1123.254)" fill="#4a25aa"/>
+    <path id="Path_18284" data-name="Path 18284" d="M16313.335,2069.855h-4a2,2,0,0,1,0-4h4a2,2,0,0,1,0,4Z" transform="translate(-15063.523 -1100.18)" fill="#4a25aa"/>
+    <g id="Group_55738" data-name="Group 55738" transform="translate(1259 949)">
+      <path id="Ellipse_675" data-name="Ellipse 675" d="M7,4a3,3,0,1,0,3,3A3,3,0,0,0,7,4M7,0A7,7,0,1,1,0,7,7,7,0,0,1,7,0Z" fill="#4a25aa"/>
+      <path id="Line_562" data-name="Line 562" d="M7,2H0A2,2,0,0,1-2,0,2,2,0,0,1,0-2H7A2,2,0,0,1,9,0,2,2,0,0,1,7,2Z" transform="translate(12 7)" fill="#4a25aa"/>
+    </g>
+  </g>
+</svg>
