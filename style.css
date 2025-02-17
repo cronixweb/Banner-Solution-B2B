@@ -70,6 +70,7 @@ main *{
   font-weight: 600;
   width: 88%;
   margin: 0 auto;
+  text-transform: capitalize;
 }
 .hero-text p:first-of-type{
   font-size: var(--font-size-root);
@@ -114,16 +115,29 @@ main *{
     color: var(--font-color-white);
     border-radius: 6px;
 }
+
 /* contact us  */
+
 .mlti-col-wrapper{
     gap: 75px;
-    margin: 50px 0;
+    padding: 50px 16px;
+}
+.mlti-col-wrapper h2{
+  font-weight: 700;
+}
+.mlti-col-wrapper h2::after{
+  content: "";
+  display: block;
+  width: 120px;
+  margin: 10px auto;
+  border-bottom: 4px dotted var(--underline-color);
 }
 .mlti-col-wrapper ul{
     padding: 0;
     display: grid;
     grid-template-columns: auto;
     gap: 20px;
+    width: 100%;
 }
 .mlti-col-wrapper ul li{
     display: flex;
@@ -131,6 +145,33 @@ main *{
     align-items: center;
     text-align: center;
     gap: 15px;
+    position: relative;
+}
+.mlti-col-wrapper ul li::before{
+  content: '';
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  max-width: 34px;
+  background-image: url("/images/contact-box.svg");
+  position: absolute;
+  border-radius: 5px;
+}
+.mlti-col-wrapper ul li:first-child::before{
+  top: 30%;
+  left: 15%;
+}
+.mlti-col-wrapper ul li:nth-child(2)::before{
+  top: 0;
+  left: 15%;
+}
+.mlti-col-wrapper ul li:nth-child(3)::before{
+  top: 15%;
+  left: 5%;
+}
+.mlti-col-wrapper ul li:last-child::before{
+  top: 0;
+  left: 10%;
 }
 .mlti-col-wrapper ul li h3{
     font-size: var(--font-size-h3);
@@ -139,6 +180,7 @@ main *{
     background-color: var(--contact-icon-bg-color);
     padding: 10px;
     border-radius: 8px;
+    margin-top: 15%;
 }
 .mlti-col-wrapper .note{
     display: flex;
