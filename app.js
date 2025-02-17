@@ -217,3 +217,21 @@ window.addEventListener('resize', () => {
     initializeMobileSlider();
 
 });
+
+
+
+
+// If you prefer using CSS classes for the image swap
+const categoryCards = document.querySelectorAll('.category-card');
+
+categoryCards.forEach(card => {
+    const img = card.querySelector('.category-icon img');
+    
+    card.addEventListener('mouseenter', () => {
+        img.classList.add('hover-image');
+    });
+
+    card.addEventListener('mouseleave', () => {
+        img.classList.remove('hover-image');
+    });
+});
