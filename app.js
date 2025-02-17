@@ -116,3 +116,92 @@ document.addEventListener("DOMContentLoaded", () => {
     container.addEventListener('scroll', updateArrows);
     updateArrows();
 });
+
+
+
+
+// serivce section js 
+
+function initializeMobileSlider() {
+    if (window.innerWidth < 998) {
+        const serviceCards = document.querySelectorAll('.service-card');
+        
+        serviceCards.forEach(card => {
+            const featuresContainer = card.querySelector('.service-features');
+            const features = card.querySelectorAll('.feature');
+            let currentIndex = 0;
+            let touchStartX = 0;
+            let touchEndX = 0;
+            
+            // Create dots container
+            const dotsContainer = document.createElement('div');
+            dotsContainer.className = 'slider-dots';
+            features.forEach((_, index) => {
+                const dot = document.createElement('span');
+                dot.className = `dot ${index === 0 ? 'active' : ''}`;
+                dot.addEventListener('click', () => showFeature(features, index, dotsContainer));
+                dotsContainer.appendChild(dot);
+            });
+            featuresContainer.parentNode.insertBefore(dotsContainer, featuresContainer.nextSibling);
+
+            // Initialize first feature
+            showFeature(features, currentIndex, dotsContainer);
+
+            // Touch event handlers
+            featuresContainer.addEventListener('touchstart', e => {
+                touchStartX = e.changedTouches[0].screenX;
+            });
+
+            featuresContainer.addEventListener('touchend', e => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            });
+
+            const handleSwipe = () => {
+                const swipeThreshold = 50;
+                const swipeDifference = touchStartX - touchEndX;
+
+                if (swipeDifference > swipeThreshold) {
+                    currentIndex = Math.min(currentIndex + 1, features.length - 1);
+                } else if (swipeDifference < -swipeThreshold) {
+                    currentIndex = Math.max(currentIndex - 1, 0);
+                }
+                
+                showFeature(features, currentIndex, dotsContainer);
+            };
+        });
+    }
+}
+
+function showFeature(features, index, dotsContainer) {
+    features.forEach((feature, i) => {
+        if (i === index) {
+            feature.style.transform = 'translateX(-50%)';
+            feature.style.opacity = '1';
+            feature.style.zIndex = '1';
+            feature.style.visibility = 'visible';
+        } else {
+            const offset = i < index ? '-100%' : '100%';
+            feature.style.transform = `translateX(${offset})`;
+            feature.style.opacity = '0';
+            feature.style.zIndex = '0';
+            feature.style.visibility = 'hidden';
+        }
+    });
+
+    // Update dots
+    if (dotsContainer) {
+        const dots = dotsContainer.querySelectorAll('.dot');
+        dots.forEach((dot, i) => {
+            dot.classList.toggle('active', i === index);
+        });
+    }
+}
+
+// Update event listeners
+document.addEventListener('DOMContentLoaded', initializeMobileSlider);
+window.addEventListener('resize', () => {
+    document.querySelectorAll('.slider-dots').forEach(dots => dots.remove());
+    document.querySelectorAll('.feature').forEach(feature => feature.style = '');
+    initializeMobileSlider();
+});
