@@ -235,3 +235,180 @@ categoryCards.forEach(card => {
         img.classList.remove('hover-image');
     });
 });
+
+
+// order-pad js
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Element selectors
+    const orderPadButton = document.querySelector('.order-pad-button');
+    const orderPadPanel = document.querySelector('.order-pad-panel');
+    const overlay = document.querySelector('.overlay');
+    const mobileCloseBtn = document.querySelector('.mobile-close-btn');
+    const quantityInputs = document.querySelectorAll('.quantity-controls input');
+    const quantityButtons = document.querySelectorAll('.qty-btn');
+
+    // Initially hide the close button
+    if(mobileCloseBtn) {
+        mobileCloseBtn.style.display = 'none';
+        mobileCloseBtn.classList.remove('show');
+    }
+
+    // Function to check and set mobile close button visibility
+    function checkMobileCloseButtonVisibility() {
+        if (mobileCloseBtn) {
+            if (window.innerWidth <= 960 && orderPadPanel.classList.contains('active')) {
+                mobileCloseBtn.classList.add('show');
+                mobileCloseBtn.style.display = 'block';
+            } else {
+                mobileCloseBtn.classList.remove('show');
+                mobileCloseBtn.style.display = 'none';
+            }
+        }
+    }
+
+    // Function to open the order pad
+    function openOrderPad() {
+        orderPadPanel.classList.add('active');
+        overlay.classList.add('active');
+        checkMobileCloseButtonVisibility();
+        document.body.style.overflow = 'hidden';
+    }
+
+    // Function for cleanup
+    function cleanup() {
+        if(mobileCloseBtn) {
+            mobileCloseBtn.classList.remove('show');
+            mobileCloseBtn.style.display = 'none';
+        }
+        orderPadPanel.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
+
+    // Function to close the order pad
+    function closeOrderPad() {
+        orderPadPanel.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = 'auto';  
+        
+        // Force hide mobile close button
+        if(mobileCloseBtn) {
+            mobileCloseBtn.classList.remove('show');
+            mobileCloseBtn.style.display = 'none';
+        }
+    }
+
+    // Order pad button click
+    orderPadButton.addEventListener('click', function(e) {
+        e.stopPropagation();
+        openOrderPad();
+    });
+
+    // Mobile close button click
+    if(mobileCloseBtn) {
+        mobileCloseBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            closeOrderPad();
+        });
+    }
+
+    // Click outside to close
+    document.addEventListener('click', function(e) {
+        if (orderPadPanel.classList.contains('active') && 
+            !orderPadPanel.contains(e.target) && 
+            !orderPadButton.contains(e.target)) {
+            closeOrderPad();
+        }
+    });
+
+    // Prevent panel clicks from closing
+    orderPadPanel.addEventListener('click', function(e) {
+        e.stopPropagation();
+    });
+
+    // Handle quantity controls
+    quantityButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const input = this.parentElement.querySelector('input');
+            const currentValue = parseInt(input.value) || 0;
+            
+            if(this.classList.contains('minus')) {
+                if(currentValue > 1) {
+                    input.value = currentValue - 1;
+                }
+            } else if(this.classList.contains('plus')) {
+                input.value = currentValue + 1;
+            }
+            
+            // Trigger change event
+            const event = new Event('change');
+            input.dispatchEvent(event);
+        });
+    });
+
+    // Handle quantity input validation
+    quantityInputs.forEach(input => {
+        // Prevent non-numeric input
+        input.addEventListener('keypress', function(e) {
+            if(!/[0-9]/.test(e.key)) {
+                e.preventDefault();
+            }
+        });
+
+        // Ensure minimum value is 1
+        input.addEventListener('change', function() {
+            let value = parseInt(this.value) || 0;
+            if(value < 1) {
+                this.value = 1;
+            }
+        });
+
+        // Prevent paste of non-numeric values
+        input.addEventListener('paste', function(e) {
+            const pastedData = e.clipboardData.getData('text');
+            if(!/^\d+$/.test(pastedData)) {
+                e.preventDefault();
+            }
+        });
+    });
+
+    // Handle touch events for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    orderPadPanel.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+    }, false);
+
+    orderPadPanel.addEventListener('touchend', function(e) {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    }, false);
+
+    function handleSwipe() {
+        const swipeThreshold = 100;
+        const swipeDistance = touchEndX - touchStartX;
+        
+        if(Math.abs(swipeDistance) > swipeThreshold && swipeDistance > 0) {
+            closeOrderPad();
+        }
+    }
+
+    // Handle keyboard events
+    document.addEventListener('keydown', function(e) {
+        if(e.key === 'Escape' && orderPadPanel.classList.contains('active')) {
+            closeOrderPad();
+        }
+    });
+
+    // Add window resize handler
+    window.addEventListener('resize', function() {
+        checkMobileCloseButtonVisibility();
+        if(window.innerWidth > 960) {
+            cleanup();
+        }
+    });
+});

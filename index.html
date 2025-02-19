@@ -20,6 +20,78 @@
     <script src="/app.js"></script>
 </head>
 <body>
+
+    <div class="overlay"></div>
+    <div class="order-pad-container">
+        <!-- Order Pad Button -->
+        <button class="order-pad-button">
+            ORDER PAD
+        </button>
+    
+        <!-- Order Pad Panel -->
+        <div class="order-pad-panel">
+            <div class="order-pad-header">
+                <h2>Order Pad</h2>
+                <div class="order-labels">
+                    <span>Quick Order Items</span>
+                    <span class="qty-no">Qty</span>
+                </div>
+            </div>
+    
+            <div class="order-items">
+                <!-- Repeat this for each order row -->
+                <div class="order-item">
+                    <input type="text" placeholder="SKU or Keyword">
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <input type="text" placeholder="SKU or Keyword">
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <input type="text" placeholder="SKU or Keyword">
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <input type="text" placeholder="SKU or Keyword">
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+                <div class="order-item">
+                    <input type="text" placeholder="SKU or Keyword">
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+                <!-- Add 4 more identical rows -->
+            </div>
+    
+            <div class="order-actions">
+                <button class="add-to-cart-btn">Add to cart</button>
+                <a href="#" class="additional-products">Add Additional Products</a>
+            </div>
+            <button class="mobile-close-btn">Close</button>
+
+        </div>
+        
+    </div>
     <!--header start -->
     <header>
         <div class="container">   

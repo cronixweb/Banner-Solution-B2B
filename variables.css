@@ -35,6 +35,14 @@
   --color-text-gray: #4E4E4E; /* Added for category details */
   --color-accent-yellow: #FFC107; /* Added for dotted border under h2 */
   --color-light-purple:#0C78C7;
+  --color-shadow-dark: rgba(0, 0, 0, 0.28);
+  --color-purple-button: #7F55EA;
+  --color-text-dark-transparent: #000000DE;
+  --color-border-light-gray: #ede8e8;
+  --color-border-lighter: #eeeeee;
+  --color-border-medium: #E0E0E0;
+  --color-background-quantity: #EEE7FF;
+  --color-overlay-background: rgba(0, 0, 0, 0.5);
 
 
     /* Orange Theme Colors */
