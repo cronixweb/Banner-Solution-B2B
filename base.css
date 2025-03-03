@@ -26,6 +26,12 @@
     --font-size-h2-very-small:14px;
     --font-size-h2-small:20px;
     --font-size-h2-medium:25px;
+    --font-size-h2-large:40px;
+    --font-size-h2-very-large:53px;
+    --font-size-h3-small:20px;
+    --font-size-h3-very-large:26px;
+    --h2-subheading-font:19px;
+    --h2-subheading-font-large:42px;
     --color-gray:#333333;
     --color-blueviolet:blueviolet;
     --color-blue:#0899e7;

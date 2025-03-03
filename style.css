@@ -1874,7 +1874,7 @@ body#page-about{
   width: 100%;
 }
 #page-about .multiple-iamge-container .card .descriptive-text .year{
-  font-size: 28px;
+  font-size: var(--font-size-28);
   font-weight: 600;
   color: var(--color-black);
   opacity: 0.87;
@@ -1897,7 +1897,8 @@ body#page-about{
 }
 #page-about .multi-row h2{
   font-size: var(--font-size-h2-small);
-  color: var(--about-font-color);
+  color: var(--color-black);
+  opacity: 0.87;
   font-weight: 500;
   line-height: 1.5;
 }
@@ -1918,16 +1919,49 @@ body#page-about{
   width: 100%;
   height: auto;
 }
+/* Our Location */
+#page-about .multi-row .text-wrapper h2 span{
+  font-size: var(--font-size-16);
+  color: #0c78c7;
+}
+#page-about .multi-row .text-wrapper h2{
+  margin-bottom: 15px;
+}
+#page-about .multi-row .location-card-wrapper{
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+}
+#page-about .multi-row .location-card-wrapper .location-card{
+  margin: 45px 0 20px 0;
+  box-shadow: 2px 4px 8px #0000001F;
+}
+#page-about .multi-row .location-card-wrapper .location-card .card{
+  display: flex;
+  flex-direction: column;
+  min-width: 265px;
+  min-height: 152px;
+  padding-left: 20px;
+  justify-content: center;
+}
+#page-about .multi-row .location-card-wrapper .location-card .card h3{
+  color: #4a25aa;
+  font-size: var(--font-size-h3-small);
+}
+#page-about .multi-row .location-card-wrapper .location-card .card p{
+  font-size: var(--font-size-root);
+  max-width: unset;
+}
+#page-about .multi-row .location-card-wrapper .location-card .card .card-type{
+  color: #808080;
+  margin: 10px 0 20px 0;
+}
 
 
 
 @media (min-width:1100px) {
 
   /* video-with-text */
-  body#page-about{
-    max-width: 80%;
-    margin: 0 auto;
-  }
   #page-about h1{
     text-align: left;
     font-size: var(--font-size-h1-large);
@@ -1961,13 +1995,13 @@ body#page-about{
     padding: 30px 20px;
   }
   #page-about .multi-column-text .text-content-container .text-content p{
-    font-size: 14px;
+    font-size: var(--font-size-root);
   }
 
   /* our journey */
 
   #page-about .multiple-iamge-container .text-content h2,  #page-about .multiple-iamge-container .text-content p{
-    font-size: 22px;
+    font-size: var(--font-size-medium);
   }
   #page-about .multiple-iamge-container .text-content p{
     letter-spacing: 1px;
@@ -1975,12 +2009,127 @@ body#page-about{
   /* our team */
 
   #page-about .multi-row h2{
-    font-size: 26px;
+    font-size: var(--font-size-h2-medium);
   }
   #page-about .multi-row .gradient-text{
-    font-size: 19px;
+    font-size: var(--h2-subheading-font);
   }
   #page-about .multi-row p{
-    font-size: 16px;
+    font-size: var(--font-size-16);
+  }
+  /* Our Location */
+  #page-about .multi-row .location-card-wrapper{
+    flex-wrap: wrap;
+  }
+  #page-about .multi-row .location-card-wrapper .location-card{
+    padding-left: 20px;
+    width: 30%;
+  }
+  #page-about .multi-row .location-card-wrapper .location-card .card{
+    border-left: 3px solid #4A25AA;
+  }
+  #page-about .multi-row .text-wrapper h2 span{
+    font-size: var(--font-size-medium);
+  }
+}
+
+@media (min-width:2000px) {
+  #page-about .video-with-text .descriptive-text h2{
+    font-size: var(--font-size-h2-very-large);
+  }
+  #page-about .video-with-text .descriptive-text p{
+    font-size: var(--font-size-24);
+    letter-spacing: 1px;
+  }
+  #page-about .video-with-text .video-wrapper .jss2353{
+    max-width: none;
+    max-height: 75%;
+  }
+  #page-about .video-with-text .descriptive-text .svg-content-container{
+    justify-content: space-evenly;
+  }
+  #page-about .video-with-text .descriptive-text .svg-content-container .svg-content img{
+    aspect-ratio: 132 / 152;
+    width: 100%;
+    max-width: 132px;
+  }
+  #page-about .video-with-text .descriptive-text .svg-content-container .svg-content .description{
+    font-size: var( --font-size-medium);
+    max-width: 187px;
+  }
+  #page-about .video-with-text{
+    gap: 80px;
+  }
+  body#page-about{
+    padding: 0;
+    box-sizing: border-box;
+  }
+  #page-about .video-with-text .descriptive-text h2{
+    color: #000000;
+    opacity: 0.87;
+    font-weight: 600;
+    font-stretch: 100%;
+  }
+  #page-about .multi-column-text .text-content-container .text-content h2{
+    font-size: var(--font-size-h2-large);
+  }
+  #page-about .multi-column-text .text-content-container .text-content h2 span{
+    width: unset;
+    padding-right: 10px;
+    opacity: 0.77;
+  }
+  #page-about .multi-column-text .text-content-container .text-content p{
+    font-size: var(--font-size-24);
+    max-width: 510px;
+  }
+  #page-about .multiple-iamge-container .text-content h2, #page-about .multiple-iamge-container .text-content p{
+    font-size: var(--font-size-h2-very-large);
+    letter-spacing: 1px;
+  }
+  #page-about .multiple-iamge-container .card .descriptive-text .year{
+    font-size: var(--font-size-large);
+  }
+  #page-about .multiple-iamge-container .card .descriptive-text p:last-of-type{
+    font-size: var(--font-size-24);
+  }
+  #page-about .multiple-iamge-container .card{
+    max-width: 90%;
+  }
+  #page-about .multiple-iamge-container .card img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 325 / 356;
+  }
+  #page-about .multi-row h2{
+    font-size: var(--font-size-h2-very-large);
+  }
+  #page-about .multi-row .gradient-text{
+    font-size: var(--font-size-h2-large);
+  }
+  #page-about .multi-row p{
+    font-size: var(--font-size-33);
+    max-width: 80%;
+  }
+  #page-about .multi-column-text .text-content-container .text-content{
+    padding: 50px 60px;
+    border-radius: 16px;
+  }
+  #page-about .multi-row img{
+    margin-top: 50px;
+  }
+  #page-about .multi-row .location-card-wrapper .location-card .card h3{
+    font-size: var(--font-size-h3-very-large);
+  }
+  #page-about .multi-row .location-card-wrapper .location-card{
+    width: 24%;
+  }
+  #page-about .multi-row .location-card-wrapper .location-card .card .card-type{
+    font-size: var(--font-size-16);
+  }
+  #page-about .multi-row .location-card-wrapper .location-card .card p{
+    font-size: var(--font-size-18);
+  }
+  #page-about .multi-row .text-wrapper h2 span{
+    font-size: var(--h2-subheading-font-large);
   }
 }
