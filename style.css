@@ -1679,3 +1679,308 @@ object-fit: contain;
 .overlay.active {
   display: block;
 }
+
+/*------------- About us styling -------------------*/
+body#page-about{
+  margin: 0;
+  padding: 0 16px;
+  font-family: var(--font-family-inter);
+}
+#page-about *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#page-about p{
+  font-weight: 400;
+}
+#page-about h1{
+  font-size: var(--font-size-h1-small);
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* video-with-text  */
+#page-about .video-with-text .video-wrapper{
+  text-align: center;
+}
+#page-about .video-with-text .video-wrapper .jss2353{
+  width: 100%;
+  aspect-ratio: 288/194;
+  max-width: 750px;
+}
+#page-about .video-with-text .descriptive-text{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+#page-about .video-with-text .descriptive-text h2{
+  font-size: var(--font-size-h2-very-small);
+  text-align: center;
+}
+#page-about .video-with-text .descriptive-text p{
+  color: var(--color-gray);
+  font-family: var(--font-family-inter);
+  line-height: 1.6;
+  font-size: var( --font-size-small);
+  text-align: justify;
+}
+#page-about .video-with-text .descriptive-text .svg-content-container{
+  display: flex;
+  justify-content: space-evenly;
+}
+#page-about .video-with-text .descriptive-text .svg-content-container .svg-content{
+  text-align: center;
+}
+#page-about .video-with-text .descriptive-text .svg-content-container .svg-content .description{
+  font-size: var(--font-size-small);
+  text-align: center;
+}
+
+/* About our services */
+#page-about .multi-column-text{
+  margin-top: 50px;
+}
+#page-about .multi-column-text .text-content-container{
+  display: flex;
+  gap: 60px;
+  overflow-x: scroll;
+}
+#page-about .multi-column-text .text-content-container .text-content{
+  background-color: var(--color-grey-mid);
+  padding: 30px 25px 0px 30px;
+  min-width: 331px;
+  min-height: 370px;
+  width: 100%;
+  margin-bottom: 30px;
+  border-radius: 6px;
+  box-shadow: 0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);
+}
+#page-about .multi-column-text .text-content-container .text-content h2{
+  font-size: var(--font-size-h2-medium);
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+#page-about .multi-column-text .text-content-container .text-content h2 span{
+  padding-right: 10px;
+}
+#page-about .multi-column-text .text-content-container .text-content:first-child h2 span{
+  color: var(--color-blueviolet);
+}
+#page-about .multi-column-text .text-content-container .text-content:nth-child(2) h2 span{
+  color: var(--color-blue);
+}
+#page-about .multi-column-text .text-content-container .text-content:last-child h2 span{
+  color: var(--color-orange);
+}
+#page-about .multi-column-text .text-content-container .text-content p{
+  font-size: var( --font-size-small);
+  line-height: 1.5;
+  font-family: var(--font-family-inter);
+  color: var(--color-black);
+  opacity: 0.87;
+}
+
+/* our journey */
+
+#page-about .multiple-iamge-container{
+  margin-top: 50px;
+  background-color: var(--color-grey-mid);
+  padding: 15px 0 20px 0;
+}
+#page-about .multiple-iamge-container .text-content{
+  margin: 0 0 24px 16px;
+}
+#page-about .multiple-iamge-container .text-content h2{
+  font-size: var(--font-size-h2-small);
+  color: var(--color-black);
+  opacity: 0.87;
+  line-height: 1.5;
+}
+#page-about .multiple-iamge-container .text-content p{
+  font-size: var( --font-size-small);
+  color: var(--color-black);
+  opacity: 0.87;
+  line-height: 1.5;
+}
+#page-about .multiple-iamge-container .slick-prev{
+  left: -15px;
+  top: 54%;
+  z-index: 999;
+}
+#page-about .multiple-iamge-container .slick-arrow::before{
+  color: transparent;
+}
+#page-about .multiple-iamge-container .slick-next{
+  right: -10px;
+  top: 53%;
+  z-index: 999;
+}
+#page-about .multiple-iamge-container .slick-initialized::before{
+  content : '';
+  background-image: url('/images/left-arrow.png');
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: rotate(180deg);
+  left: -15px;
+}
+#page-about .multiple-iamge-container .slick-initialized::after{
+  content : '';
+  background-image: url('/images/left-arrow.png');
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 49%;
+  right: -15px;
+}
+#page-about .multiple-iamge-container .slick-slide{
+  margin: 0 24px;
+}
+#page-about .multiple-iamge-container .slick-slide::after{
+  content: '2016';
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin-top: 15px;
+  color: var(--color-black);
+  opacity: 0.87;
+}
+#page-about .multiple-iamge-container .slick-slide::before{
+  content: '.';
+  position: absolute;
+  bottom: -15px;
+  font-size: 50px;
+  text-align: center;
+  width: 9.5%;
+  color: var(--about-font-color);
+  z-index: 9999;
+}
+#page-about .multiple-iamge-container .slick-track::after{
+  border-bottom: 1px solid var(--about-font-color);
+  width: 89%;
+  margin: 0 auto;
+}
+#page-about .multiple-iamge-container .card{
+  background-color: white;
+  border-radius: 4px;
+  padding: 0 16px 18px 16px;
+  max-width: 300px;
+}
+#page-about .multiple-iamge-container .card img{
+  width: 100%;
+}
+#page-about .multiple-iamge-container .card .descriptive-text .year{
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--color-black);
+  opacity: 0.87;
+}
+#page-about .multiple-iamge-container .card .descriptive-text p:last-of-type{
+  color: var(--about-font-color);
+  text-overflow: ellipsis;
+  max-width: 190px;
+  white-space: nowrap;
+  overflow: hidden;
+  color: var(--about-card-name-color);
+}
+
+/* our team */
+#page-about .multi-row{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px 0;
+}
+#page-about .multi-row h2{
+  font-size: var(--font-size-h2-small);
+  color: var(--about-font-color);
+  font-weight: 500;
+  line-height: 1.5;
+}
+#page-about .multi-row .gradient-text{
+  font-size: var(--font-size-16);
+  background: linear-gradient(90deg, rgb(74, 37, 170) 0%, rgb(8, 153, 231) 100%) 0% 0% no-repeat padding-box text transparent;
+  -webkit-text-fill-color:transparent;
+  display: inline-block;
+}
+#page-about .multi-row p{
+  color: var(--color-black);
+  opacity: 0.87;
+  font-size: var(--font-size-small);
+  max-width: 83.3%;
+  line-height: 1.5;
+}
+#page-about .multi-row img{
+  width: 100%;
+  height: auto;
+}
+
+
+
+@media (min-width:1100px) {
+
+  /* video-with-text */
+  body#page-about{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  #page-about h1{
+    text-align: left;
+    font-size: var(--font-size-h1-large);
+  }
+  #page-about .video-with-text{
+    display: flex;
+    gap: 60px;
+  }
+  #page-about .video-with-text .video-wrapper{
+    width: 50%;
+    text-align: left;
+  }
+  #page-about .video-with-text .video-wrapper .jss2353{
+    aspect-ratio: 288/175;
+  }
+  #page-about .video-with-text .descriptive-text{
+    width: 50%;
+    margin: 0;
+  }
+  #page-about .video-with-text .descriptive-text h2{
+    font-size: var(--font-size-h2-small);
+    text-align: left;
+  }
+
+  /* About our services */
+  #page-about .multi-column-text .text-content-container{
+    overflow-x: auto;
+  }
+  #page-about .multi-column-text .text-content-container .text-content{
+    box-shadow: none;
+    padding: 30px 20px;
+  }
+  #page-about .multi-column-text .text-content-container .text-content p{
+    font-size: 14px;
+  }
+
+  /* our journey */
+
+  #page-about .multiple-iamge-container .text-content h2,  #page-about .multiple-iamge-container .text-content p{
+    font-size: 22px;
+  }
+  #page-about .multiple-iamge-container .text-content p{
+    letter-spacing: 1px;
+  }
+  /* our team */
+
+  #page-about .multi-row h2{
+    font-size: 26px;
+  }
+  #page-about .multi-row .gradient-text{
+    font-size: 19px;
+  }
+  #page-about .multi-row p{
+    font-size: 16px;
+  }
+}

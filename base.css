@@ -20,4 +20,16 @@
     --details-font-color:#191919;
     --placeholder-color: #757575;
     --button-color:#7f55EA;
+    --breadcrumb-primary-color:#4A25AA;
+    --breadcrumb-active-color:#4C4C4C;
+    --about-font-color:#4C4C4C;
+    --font-size-h2-very-small:14px;
+    --font-size-h2-small:20px;
+    --font-size-h2-medium:25px;
+    --color-gray:#333333;
+    --color-blueviolet:blueviolet;
+    --color-blue:#0899e7;
+    --color-orange:orange;
+    --color-grey-mid:#f8f8f8;
+    --about-card-name-color:#191919;
 }

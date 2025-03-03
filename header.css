@@ -312,3 +312,32 @@ header.scrolled .container .user-controls a:first-child{
 header.scrolled .container .menu-items ul li a:hover{
     color: var(--sublist-hover-color);
 }
+
+
+/*---------------- breadcrumbs style-------------------- */
+.main-breadcrumbs{
+    display: none;
+    gap: 8px;
+    align-items: center;
+}
+.main-breadcrumbs .breadcrumb .breadcrumb-label{
+    color: var(--breadcrumb-primary-color);
+    text-transform: uppercase;
+}
+.main-breadcrumbs .breadcrumb .breadcrumb-label.active{
+    color: var(--breadcrumb-active-color);
+}
+.main-breadcrumbs .breadcrumb::after{
+    content: '›';
+    font-size: 20px;
+    color: var(--breadcrumb-active-color);
+    margin-left: 8px;
+}
+.main-breadcrumbs .breadcrumb:last-child::after{
+    content: '';
+}
+@media (min-width:960px) {
+     .main-breadcrumbs{
+        display: flex;
+    }   
+}
